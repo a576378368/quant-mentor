@@ -58,6 +58,10 @@ html_js_files = ['custom.js']
 myst_enable_extensions = [
     'colon_fence',
     'deflist',
+    'attrs_inline',
+    'attrs_block',
+    'dollarmath',
+    'amsmath',
 ]
 
 # 禁用某些警告
