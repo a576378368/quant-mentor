@@ -2,28 +2,28 @@
 /* 精美、专业、易读 */
 
 :root {
-    /* 主题色 - 金融风格 */
-    --primary-color: #1e40af;
-    --primary-dark: #1e3a8a;
+    /* 主题色 - 金融风格（更鲜明） */
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
     --primary-light: #3b82f6;
-    --accent-color: #f59e0b;
+    --accent-color: #f97316;
     
-    /* 背景色 */
-    --bg-color: #f8fafc;
-    --bg-sidebar: #ffffff;
+    /* 背景色（更高对比度） */
+    --bg-color: #ffffff;
+    --bg-sidebar: #f8fafc;
     --bg-content: #ffffff;
     
-    /* 文字色 */
-    --text-main: #1e293b;
-    --text-secondary: #64748b;
-    --text-muted: #94a3b8;
+    /* 文字色（更深） */
+    --text-main: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
     
-    /* 边框 */
-    --border-color: #e2e8f0;
+    /* 边框（更明显） */
+    --border-color: #cbd5e1;
     
-    /* 卡片 */
-    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-    --card-shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    /* 卡片阴影 */
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+    --card-shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.08);
 }
 
 /* 全局样式 */
@@ -444,7 +444,7 @@ footer a {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     background: white;
     border-radius: 12px;
     box-shadow: var(--card-shadow);
@@ -452,16 +452,18 @@ footer a {
 }
 
 .author-avatar {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
     border-radius: 50%;
     background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: white;
     font-weight: 700;
+    flex-shrink: 0;
 }
 
 /* 加载动画 */
