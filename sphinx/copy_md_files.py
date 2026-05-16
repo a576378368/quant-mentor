@@ -5,7 +5,9 @@
 import os
 import re
 
-PROJECT_DIR = "/home/yang/workspace/stock/游资心法教材工程"
+# 使用相对路径，适应 GitHub Actions 环境
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 CHAPTERS_DIR = os.path.join(PROJECT_DIR, "chapters")
 SPHINX_DIR = os.path.join(PROJECT_DIR, "sphinx")
 
@@ -115,30 +117,31 @@ def copy_markdown_files():
     print("复制 Markdown 文件到 sphinx 目录...")
     
     for i in range(1, 15):
-        for item in os.listdir(CHAPTERS_DIR):
-            if item.startswith(f"part{i}-"):
-                part_dir = os.path.join(CHAPTERS_DIR, item)
-                sphinx_part_dir = os.path.join(SPHINX_DIR, item)
-                
-                if os.path.isdir(part_dir):
-                    os.makedirs(sphinx_part_dir, exist_ok=True)
+        if os.path.exists(CHAPTERS_DIR):
+            for item in os.listdir(CHAPTERS_DIR):
+                if item.startswith(f"part{i}-"):
+                    part_dir = os.path.join(CHAPTERS_DIR, item)
+                    sphinx_part_dir = os.path.join(SPHINX_DIR, item)
                     
-                    # 复制 .md 文件并转换为 .rst
-                    for md_file in os.listdir(part_dir):
-                        if md_file.endswith(".md"):
-                            src = os.path.join(part_dir, md_file)
-                            dst = os.path.join(sphinx_part_dir, md_file[:-3] + ".rst")
-                            
-                            with open(src, "r", encoding="utf-8") as f:
-                                content = f.read()
-                            
-                            # 转换为 reStructuredText 格式
-                            rst_content = md_to_rst(content)
-                            
-                            with open(dst, "w", encoding="utf-8") as f:
-                                f.write(rst_content)
-                    
-                    print(f"  Copied {item}")
+                    if os.path.isdir(part_dir):
+                        os.makedirs(sphinx_part_dir, exist_ok=True)
+                        
+                        # 复制 .md 文件并转换为 .rst
+                        for md_file in os.listdir(part_dir):
+                            if md_file.endswith(".md"):
+                                src = os.path.join(part_dir, md_file)
+                                dst = os.path.join(sphinx_part_dir, md_file[:-3] + ".rst")
+                                
+                                with open(src, "r", encoding="utf-8") as f:
+                                    content = f.read()
+                                
+                                # 转换为 reStructuredText 格式
+                                rst_content = md_to_rst(content)
+                                
+                                with open(dst, "w", encoding="utf-8") as f:
+                                    f.write(rst_content)
+                        
+                        print(f"  Copied {item}")
     
     print("Done!")
 
