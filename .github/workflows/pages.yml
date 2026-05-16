@@ -34,3 +34,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
           force_orphan: true
+          allow_empty_commit: true
+          commit_message: "docs: 更新站点"
