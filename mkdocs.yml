@@ -19,7 +19,7 @@ theme:
     - search.suggest
     - search.highlight
 
-docs_dir: docs
+docs_dir: chapters
 site_dir: site
 
 nav:
