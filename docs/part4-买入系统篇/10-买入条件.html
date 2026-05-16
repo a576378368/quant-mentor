@@ -1,0 +1,1577 @@
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第10章 买入条件：确认的信号 &#8212; 游资心法：从入门到大师的进阶之路</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=c9d580f5" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=509a98c5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'part4-买入系统篇/10-买入条件';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/custom.js?v=26c13568"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="第11章 买入时机：最佳买点" href="11-%E4%B9%B0%E5%85%A5%E6%97%B6%E6%9C%BA.html" />
+    <link rel="prev" title="part4-买入系统篇" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  <meta name="docsearch:version" content="1.0" />
+    <meta name="docbuild:last-update" content="2026-05-16 22:35:52"/>
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">跳转至主要内容</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>回到顶部</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="搜索内容..."
+         aria-label="搜索内容..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="版本警告"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="网页导航">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="游资心法：从入门到大师的进阶之路 - Home"/>
+    <img src="../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="游资心法：从入门到大师的进阶之路 - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">
+    part1-认知升级篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part2-择时系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part3-选股系统篇
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    part4-买入系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">
+    part5-仓位管理系统
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part6-卖出系统篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part7-风控系统篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">
+    part8-实战技巧篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">
+    part9-游资代表篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/index.html">
+    part10-学习路径篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">
+    part11-常见误区篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">
+    part12-实战案例篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">
+    part13-成功要素篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">
+    part14-总结篇
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/quant-mentor" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:576378368@qq.com" title="Email" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Email</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="当前页面">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">
+    part1-认知升级篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part2-择时系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part3-选股系统篇
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    part4-买入系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">
+    part5-仓位管理系统
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part6-卖出系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part7-风控系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">
+    part8-实战技巧篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">
+    part9-游资代表篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/index.html">
+    part10-学习路径篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">
+    part11-常见误区篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">
+    part12-实战案例篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">
+    part13-成功要素篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">
+    part14-总结篇
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/quant-mentor" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:576378368@qq.com" title="Email" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Email</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.svg" class="logo__image only-light" alt="游资心法：从入门到大师的进阶之路 - Home"/>
+    <img src="../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="游资心法：从入门到大师的进阶之路 - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/quant-mentor" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="mailto:576378368@qq.com" title="Email" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Email</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    游资心法：从入门到大师的进阶之路
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">part1-认知升级篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/01-%E5%B8%82%E5%9C%BA%E6%9C%AC%E8%B4%A8.html">第1章 市场本质：财富再分配的博弈场（扩展内容）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/02-%E6%B8%B8%E8%B5%84%E4%B9%8B%E9%81%93.html">第2章 游资之道：职业投机的艺术（扩展内容）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/03-%E5%BF%83%E6%B3%95%E4%B8%8E%E4%BF%A1%E5%BF%B5.html">第3章 心法与信念：成功的基石（扩展内容）</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part2-择时系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/04-%E5%A4%A7%E7%9B%98%E7%8E%AF%E5%A2%83%E5%88%A4%E6%96%AD.html">第4章 大盘环境判断：强势、弱势、平衡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/05-%E6%83%85%E7%BB%AA%E5%91%A8%E6%9C%9F%E7%90%86%E8%AE%BA.html">第5章 情绪周期理论：冰点、高潮与市场轮回</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/06-%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AD%96%E7%95%A5.html">第6章 不同环境下的操作策略</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part3-选股系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/07-%E6%96%B0%E9%A2%98%E6%9D%90%E8%AF%86%E5%88%AB.html">第7章 新题材识别：发现机会的起点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/08-%E9%BE%99%E5%A4%B4%E8%82%A1%E7%AD%9B%E9%80%89.html">第8章 龙头股筛选：市场精神领袖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/09-%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F.html">第9章 选股公式：多点共振</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">part4-买入系统篇</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">第10章 买入条件：确认的信号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11-%E4%B9%B0%E5%85%A5%E6%97%B6%E6%9C%BA.html">第11章 买入时机：最佳买点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12-%E4%B9%B0%E5%85%A5%E7%BA%AA%E5%BE%8B.html">第12章 买入纪律：严格执行</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">part5-仓位管理系统</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/13-%E4%BB%93%E4%BD%8D%E8%AE%A1%E7%AE%97.html">第13章 仓位计算：科学的分配艺术</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/14-%E4%BB%93%E4%BD%8D%E5%88%86%E7%BA%A7.html">第14章 仓位分级：科学的五级体系</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/15-%E4%BB%93%E4%BD%8D%E8%B0%83%E6%95%B4.html">第15章 仓位调整：动态优化</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part6-卖出系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/16-%E5%8D%96%E5%87%BA%E4%BF%A1%E5%8F%B7.html">第16章 卖出信号：龙头断板、板块退潮</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/17-%E5%8D%96%E5%87%BA%E7%BA%AA%E5%BE%8B.html">第17章 卖出纪律：不贪不恋</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/18-%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F.html">第18章 止盈止损：保护本金</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part7-风控系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/19-%E9%A3%8E%E6%8E%A7%E6%8C%87%E6%A0%87.html">第19章 风控指标：单日3%、最大回撤10%的科学体系</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/20-%E9%A3%8E%E6%8E%A7%E6%8E%AA%E6%96%BD.html">第20章 风控措施：触发即执行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/21-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86.html">第21章 风险管理：生存第一的完整体系</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">part8-实战技巧篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/22-%E9%BE%99%E5%A4%B4%E6%89%93%E6%9D%BF.html">第22章 龙头打板：强势买入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/23-%E4%BD%8E%E5%90%B8%E5%9B%9E%E5%B0%81.html">第23章 低吸回封：弱势买点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/24-T%2B0%E6%93%8D%E4%BD%9C.html">第24章 T+0操作：日内交易增强收益</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">part9-游资代表篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/25-%E7%82%92%E8%82%A1%E5%85%BB%E5%AE%B6.html">第25章 炒股养家：情绪周期理论的开创者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/26-%E8%B5%B5%E8%80%81%E5%93%A5.html">第26章 赵老哥：龙头战法大师</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/27-%E7%AB%A0%E7%9B%9F%E4%B8%BB.html">第27章 章盟主：趋势战法专家</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/28-%E5%BE%90%E7%BF%94.html">第28章 徐翔：涨停板敢死队总舵主</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/index.html">part10-学习路径篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/29-%E5%AD%A6%E4%B9%A0%E9%98%B6%E6%AE%B5.html">第29章 学习阶段：入门→进阶→精通→大师</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/30-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95.html">第30章 学习方法：理论结合实践</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/31-%E5%90%91%E9%AB%98%E6%89%8B%E5%AD%A6%E4%B9%A0.html">第31章 向高手学习：站在巨人的肩膀上</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">part11-常见误区篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/32-%E8%BF%BD%E9%AB%98%E6%9D%80%E8%B7%8C.html">第32章 误区一：追高杀跌</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/33-%E9%A2%91%E7%B9%81%E6%93%8D%E4%BD%9C.html">第33章 误区二：频繁操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/34-%E4%B8%8D%E8%AE%BE%E6%AD%A2%E6%8D%9F.html">第34章 误区三：不设止损</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/35-%E7%9B%B2%E7%9B%AE%E8%87%AA%E4%BF%A1.html">第35章 误区四：盲目自信</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">part12-实战案例篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/36-%E7%A7%91%E6%8A%80%E9%BE%99%E5%A4%B4%E8%82%A1.html">第36章 案例一：科技龙头股（强势环境）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/37-%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9.html">第37章 案例二：超跌反弹（弱势环境）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/38-%E6%83%85%E7%BB%AA%E5%86%B0%E7%82%B9.html">第38章 案例三：情绪冰点（退潮后）</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">part13-成功要素篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/39-%E4%BF%A1%E5%BF%B5.html">第39章 信念：成功的基石</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/40-%E7%BA%AA%E5%BE%8B.html">第40章 纪律：盈利的保障</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/41-%E8%80%90%E5%BF%83.html">第41章 耐心：等待的艺术</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/42-%E5%AD%A6%E4%B9%A0.html">第42章 学习：持续进步</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">part14-总结篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/43-%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3.html">第43章 核心思想</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/44-%E6%93%8D%E4%BD%9C%E5%8F%A3%E8%AF%80.html">第44章 操作口诀</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/45-%E6%88%90%E5%8A%9F%E4%B9%8B%E8%B7%AF.html">第45章 成功之路</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/a576378368/quant-mentor" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="源码库"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/a576378368/quant-mentor/edit/main/sphinx/part4-买入系统篇/10-买入条件.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/a576378368/quant-mentor/issues/new?title=Issue%20on%20page%20%2Fpart4-买入系统篇/10-买入条件.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="创建议题"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="下载此页面">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/part4-买入系统篇/10-买入条件.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="下载源文件"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="列印成 PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全屏模式"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第10章 买入条件：确认的信号</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.1 买入原则：只做确认的信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.1.1 为什么必须只做确认的信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.1.2 买入的三大核心原则</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.1.3 买入的三大确认条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.2 强势买入条件：首板突破、二板确认、断板回封</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.2.1 首板突破：启动点的确认</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.2.2 二板确认：龙头地位的确立</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.2.3 断板回封：分歧后的再次确认</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.3 弱势买入条件：超跌反弹、跌停打开、缩量回调</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.3.1 超跌反弹：急跌后的修复机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.3.2 跌停打开：极度悲观后的反转机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.3.3 缩量回调：强势股的二波机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.4 封单量与成交量的核心指标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">10.4.1 封单量的分析方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">10.4.2 成交量的分析方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">10.4.3 封单量与成交量的综合应用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">10.5 买入条件的时间窗口</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">10.5.1 开盘30分钟的时间窗口</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">10.5.2 盘中时间的买入机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">10.5.3 时间窗口的实战应用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">10.6 不同市场环境下的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">10.6.1 强势市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">10.6.2 弱势市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">10.6.3 冰点市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">10.7 买入条件的信号汇总</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">10.7.1 强势市场买入信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">10.7.2 弱势市场买入信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">10.7.3 买入条件的禁区</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">10.8 实战案例：强势环境买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">案例一：首板突破买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">案例二：二板确认买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">案例三：断板回封买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">10.9 实战案例：弱势环境买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">案例四：超跌反弹买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">案例五：跌停打开买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id75">10.10 买入条件常见错误与纠正</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id76">10.10.1 错误一：信号不确认就买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id77">10.10.2 错误二：仓位过重</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id78">10.10.3 错误三：不设止损</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id79">10.10.4 错误四：过度自信</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id80">10.11 本章小结</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id81">强势市场买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id82">弱势市场买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id83">封单量与成交量关键指标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id84">买入纪律</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>第10章 买入条件：确认的信号<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>10.1 买入原则：只做确认的信号<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt><strong>炒股养家</strong>：</dt><dd><p>只做确认的信号，放弃所有不确定的机会。</p>
+</dd>
+</dl>
+<p>买入是交易系统中最关键的环节，也是决定成败的核心步骤。游资之所以能够实现稳定盈利，关键在于他们只做经过市场确认的交易机会，而不是凭感觉、猜点位、听消息去盲目买入。买入这一刻决定了交易的成败，因为买入价格直接决定了你的成本和潜在风险，而成本又决定了你的心态和持仓能力。本章将系统性地讲解游资的买入条件，包括强势环境下的首板突破、二板确认、断板回封，以及弱势环境下的超跌低吸、跌停打开、缩量回调等各类买点。我们追求的目标是：买在起涨点，确认信号入场，实现稳定盈利。</p>
+</section>
+<section id="id3">
+<h2>10.1.1 为什么必须只做确认的信号<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>在股票市场中，不确定性和风险是永恒的主题。作为交易者，我们的目标不是抓住所有机会，而是只抓取那些高确定性的、风险可控的机会。确认信号的本质，是让市场告诉我们答案，而不是我们主观猜测。游资大佬们无一例外都强调只做确认信号的重要性，因为他们深知：市场永远是对的，个人的判断可能错，但市场的信号不会骗人。</p>
+<p>确认信号的重要性体现在以下几个方面。第一，确认信号意味着资金的态度。当一只股票涨停并且封单持续增加时，说明市场资金强烈看多，愿意以涨停价买入。这种资金态度是最真实的做多信号，比任何技术指标或消息面都更可靠。第二，确认信号意味着板块联动。当一只股票涨停能够带动同板块其他股票跟涨时，说明这只股票具有领袖气质，是真正的龙头股。孤零零的涨停可能是主力自救，但能够带动板块联动的涨停才是真正的机会。第三，确认信号意味着市场情绪的配合。个股的机会必须在市场情绪好的时候参与，这样才能获得更高的收益。在市场情绪差的时候，即使是好股票也可能冲高回落。</p>
+<p><a href="#id4"><span class="problematic" id="id5">**</span></a>赵老哥**说过：”错误的交易，第二个集合割，效果最好。”这句话深刻揭示了确认信号的重要性。当我们买入一只股票后发现判断错误，应该在第二个集合竞价时果断止损，而不是幻想等待反弹。因为我们追求的是高确定性的机会，当确认信号不出现时，说明我们的判断可能有问题，此时最明智的选择是止损出局，而不是持有等待。</p>
+</section>
+<section id="id6">
+<h2>10.1.2 买入的三大核心原则<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>游资的买入原则可以概括为三大核心：确认信号、不贪不恋、严格计划。这三个原则相互关联，缺一不可。</p>
+<p>第一个原则是确认信号。确认信号是买入的前提，只有当市场给出明确的信号时，我们才能入场。这个信号可以是涨停板、可以是成交量的放大、可以是板块的联动、可以是龙虎榜的数据。关键是要有多个信号相互印证，而不是凭单一信号就重仓买入。</p>
+<p>第二个原则是不贪不恋。不贪不恋意味着我们不要追求买在最低点、卖在最高点，而是要接受市场给予的机会。游资的操作往往是快进快出，追求的是大概率胜算下的稳定收益，而不是赌一把大的。有时候市场没有给出确认信号，我们宁可错过机会也不贸然入场，因为本金的安全永远是第一位的。</p>
+<p>第三个原则是严格计划。每一个买入决策都应该在盘前制定好，包括买什么、买多少、什么时候买、什么时候止损。盘中临时做出的决策往往带有情绪化因素，容易导致亏损。游资大佬们都有自己严格的交易计划，每一笔交易都是按计划执行，而不是凭盘中感觉操作。</p>
+</section>
+<section id="id7">
+<h2>10.1.3 买入的三大确认条件<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>买入之前必须确认三个条件：市场环境确认、题材确认、龙头确认。这三个条件构成了买入决策的完整框架。</p>
+<p>市场环境确认是指在买入之前必须判断当前的市场环境是否适合操作。强势市场中，赚钱效应好，涨停股多，连板股多，此时应该积极进攻多做；弱势市场中，赚钱效应差，涨停股少，连板股少，此时应该保守防守少做。判断市场环境的指标包括：昨日涨停股的今日表现、昨日连板股的表现、涨停家数、炸板率、昨日首板股的今日晋级率等。只有在市场环境确认强势时，我们才应该加大仓位积极操作。</p>
+<p>题材确认是指在买入之前必须明确当前的主线题材是什么，题材的级别大小如何。题材是股价上涨的根本动力，没有题材的股票就像无根的浮萍，难以前行。判断题材级别的指标包括：消息面的重量级、政策的支持力度、想象空间的大小、板块的联动范围、持续时间的长短等。重大题材如科技革命、国家战略、政策利好等，往往能够走出大级别行情，而小题材可能只是一两天的脉冲。买入时应该选择站在主线题材上，而不是杂毛题材。</p>
+<p>龙头确认是指在买入之前必须确定我们要买的是龙头股而不是跟风股。龙头股是板块中涨幅最大、涨停最早、封单最足、持续性最强的股票，是资金博弈的主战场。买龙头股虽然可能买到高位，但确定性更高；而买跟风股虽然看似安全，但往往涨幅有限甚至冲高回落。在短线交易中，买入龙头股是胜率更高的选择。</p>
+</section>
+<section id="id8">
+<h2>10.2 强势买入条件：首板突破、二板确认、断板回封<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>在强势市场环境中，游资的买入机会主要集中在三个买点：首板突破、二板确认、断板回封。这三个买点代表了不同的确认阶段，适合不同的市场环境和个股特征。</p>
+</section>
+<section id="id9">
+<h2>10.2.1 首板突破：启动点的确认<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>首板突破是游资最喜欢的买点之一，因为它代表了股票进入主升浪的起点，未来上涨空间最大。首板突破的确认需要满足以下条件。</p>
+<p>第一，股票必须是第一次涨停。首次涨停代表了主力资金的明确做多意愿，是启动信号。连续涨停的股票已经错过了最佳买点，而首次涨停则代表了新的开始。判断是否首次涨停的标准是：在过去20个交易日内没有出现过涨停（新股除外）。</p>
+<p>第二，成交量必须明显放大。成交量的放大是确认信号真实性的重要依据。放量说明市场资金参与积极，有大量的买盘推动股价上涨。具体的成交量要求是：当日成交量大于5日均量的2倍，或者大于10日均量的1.5倍。温和放量上涨是最理想的形态，意味着资金有序进入；如果突然放出巨量，则可能是主力对倒出货，需要警惕。</p>
+<p>第三，必须有板块联动。板块联动是确认龙头地位的关键指标。一只股票单独涨停可能只是主力自救，但如果它能够带动同板块其他股票跟涨，说明它具有真正的领袖气质。板块联动的表现包括：同板块有股票跟涨、板块内有股票涨停、板块整体涨幅居前等。联动范围越广、联动强度越大，说明这只股票越可能是龙头。</p>
+<p>第四，时间要早。首板的时间早晚代表了主力资金的决心和实力。开盘30分钟内涨停的股票，往往代表主力资金的强烈做多意愿和高昂的战斗情绪。9:30到9:45之间涨停的股票是最理想的，9:45到10:00之间涨停的次之，10:00之后涨停的则相对较弱。晚板虽然也能涨停，但往往意味着主力实力不足或者市场跟风不足。</p>
+<p>第五，封单要足。涨停时的封单数量是判断主力做多意愿的重要指标。封单金额应该大于当日成交金额的50%以上，才能有效封住涨停。封单太少容易被炸板，封单持续增加则说明做多意愿强烈。如果封单在涨停后持续减少，则需要警惕可能炸板。</p>
+<p><strong>首板突破的具体操作步骤</strong>：</p>
+<p>第一步，盘前准备。在每日收盘后和次日开盘前，我们需要做好以下准备工作：复盘当日涨停股，筛选出可能的首板候选股；研究最新消息面和政策面，找出可能受益的板块和个股；制定交易计划，包括买入价格、仓位、止损价等。</p>
+<p>第二步，集合竞价观察。9:15到9:25之间，观察候选股的集合竞价情况。如果开盘价高开3%以上，并且成交量放大，说明资金抢筹积极，可以重点关注。如果开盘价低于预期，或者成交量萎靡，则需要谨慎。</p>
+<p>第三步，开盘后确认。9:30开盘后，观察股价的走势。如果股价在开盘后30分钟内涨停，并且满足首板突破的条件，可以考虑买入。买入时机一般在股价即将涨停但还未封死时，或者涨停后封单稳定时。</p>
+<p>第四步，仓位控制。首板突破的仓位一般控制在50%到70%之间，不宜过重。因为首板虽然确定性高，但仍有炸板风险，需要留出资金应对。买入后如果炸板，需要在收盘前判断是否止损。</p>
+<p>第五步，次日处理。次日开盘观察首板股的表现。如果高开高走，持有；如果高开低走，观察是否破均价线；如果低开，观察是否有承接。如果股价表现强势，可以考虑加仓；如果股价走弱，需要考虑止盈或止损。</p>
+</section>
+<section id="id10">
+<h2>10.2.2 二板确认：龙头地位的确立<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>二板是确认龙头地位的关键时刻。一只股票能够连续两个涨停，说明它已经得到了市场的认可，具有成为龙头的潜力。二板确认的买入条件比首板更加严格，因为此时股价已经上涨了一定的幅度，买入成本比首板高，但确定性也更高。</p>
+<p>二板确认的第一个条件是二板涨停。股票必须连续两个交易日涨停，才能称为二板。二板的出现意味着这只股票已经进入了主升浪的加速阶段，未来上涨空间可能很大。判断二板的标准是：当日涨停，并且昨日也是涨停。</p>
+<p>第二个条件是板块梯队完整。板块梯队是指同一题材内有多只股票形成梯次上涨的格局。第一梯队是龙头股，已经连续涨停；第二梯队是跟风股，跟随龙头上涨；第三梯队是补涨股，在龙头和跟风上涨后跟进。梯队越完整，说明板块行情越有持续性。判断板块梯队是否完整的标准是：同板块内有3只以上股票涨停，或者有2只以上股票连续涨停。</p>
+<p>第三个条件是龙头地位被市场认可。龙头地位的确认需要满足以下表现：封单金额最大、涨停时间最早、持续性最强、带动力最足。龙头股的封单金额应该明显大于同板块其他股票，是板块中最受资金关注的个股。判断龙头地位的标准包括：封单金额、成交量、股价涨幅、板块排名等。</p>
+<p>第四个条件是题材的想象空间。题材的想象空间决定了行情的持续性和高度。题材可以分为几个级别：一级题材是国家级战略，如科技创新、新能源等；二级题材是行业政策，如某个行业的扶持政策；三级题材是公司利好，如业绩增长、产品发布等。题材级别越大，行情的想象空间越大，二板之后的上涨空间也越大。</p>
+<p>第五个条件是市场环境的配合。在市场强势时，二板的成功率更高；在市场弱势时，二板容易失败。判断市场环境的指标包括：昨日涨停股的今日表现、连板股的数量、市场整体情绪等。只有在市场环境配合时，二板才有更高的确定性。</p>
+<p><strong>二板确认的具体操作步骤</strong>：</p>
+<p>第一步，开盘前确认。观察昨日首板股的表现，筛选出可能晋级的股票。重点关注那些有板块联动、封单充足、成交放大的首板股。</p>
+<p>第二步，开盘后观察。9:30开盘后，观察首板股的表现。如果股价高开高走，并且在开盘1小时内成功涨停，可以考虑买入。如果股价高开低走或者低开，则需要谨慎。</p>
+<p>第三步，确认二板。判断二板是否成功的标准包括：股价是否在10:00前涨停、封单是否充足、是否有板块联动、成交量是否健康等。如果这些条件都满足，可以确认二板。</p>
+<p>第四步，买入。确认二板后，在涨停时或涨停后买入。买入时机可以选择在即将涨停时买入，或者在封单稳定后排队买入。二板的仓位可以比首板更高，可以控制在70%到80%之间，因为二板的确定性更高。</p>
+<p>第五步，后续处理。二板之后，股票可能进入加速上涨阶段，也可能进入高位震荡阶段。需要根据次日表现和整体市场环境来判断：如果高开高走，持有或加仓；如果高开低走，观察是否止盈；如果低开，观察是否有承接，根据情况决定是持有还是止损。</p>
+</section>
+<section id="id11">
+<h2>10.2.3 断板回封：分歧后的再次确认<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<p>断板回封是龙头股在连续涨停过程中，第一次打开涨停板后再次封住涨停的情况。断板回封代表了市场分歧后的再次统一，是主力资金强势洗盘后继续拉升的信号。断板回封的买点位置比首板和二板更低，但确认难度更高。</p>
+<p>断板回封的形成机制是这样的：龙头股连续涨停后，获利盘和解套盘压力增大，部分资金选择在涨停板打开时卖出，形成断板。但卖出压力被承接盘消化后，买盘重新占据优势，股价再次封住涨停。这种走势代表了多空双方的激烈博弈，最终多方获胜，说明上涨趋势依然有效。</p>
+<p>断板回封的确认条件包括以下几个方面。</p>
+<p>第一，龙头必须已经确立了龙头地位。断板回封的股票必须是前期的龙头股，已经连续涨停并且得到了市场的认可。还没有确认龙头地位的股票断板，可能只是普通的回调，而不是洗盘。判断龙头地位的标准包括：是否连续涨停、封单是否最大、是否有板块联动、是否受到市场关注等。</p>
+<p>第二，断板时的成交量必须萎缩。萎缩的成交量说明卖压主要是获利盘和解套盘，而不是主力砸盘。成交萎缩的断板是正常的洗盘行为，次日反包的概率较高；成交放大的断板则可能是主力出货，需要警惕。判断成交量是否萎缩的标准是：断板时的成交量小于昨日涨停时的成交量。</p>
+<p>第三，板块必须没有退潮。板块退潮是指同板块的其他股票已经开始下跌，没有跟风上涨。板块退潮说明题材行情可能已经结束，此时即使龙头断板回封，也可能只是诱多而非真正的洗盘。判断板块是否退潮的标准是：同板块是否有其他股票跌停、是否有股票连续下跌、板块整体涨幅是否靠前等。</p>
+<p>第四，重新封板必须有资金回流。资金回流是确认回封有效性的关键指标。回封时必须有大量的买单推动股价重新涨停，说明市场资金依然看多。封单金额应该大于断板时的卖单金额，才能有效封住涨停。封单需要持续增加而不是减少，才能说明做多意愿强烈。</p>
+<p>第五，断板时间不能太长。从断板到回封的时间越短，说明主力实力越强、做多意愿越坚决。超过30分钟的断板可能意味着买方实力不足，需要谨慎。最佳的断板回封是断板时间在10分钟以内，说明主力快速洗盘后快速拉升。</p>
+<p><strong>断板回封的具体操作步骤</strong>：</p>
+<p>第一步，识别断板。龙头股在涨停后打开涨停板，股价回落，这种现象称为断板。需要识别断板的性质：是主力洗盘还是主力出货？是正常的获利了结还是题材退潮？</p>
+<p>第二步，观察成交量。断板时观察成交量的变化。萎缩的成交量说明是正常洗盘，可以继续关注；放大的成交量说明可能有主力出货，需要警惕。</p>
+<p>第三步，观察板块联动。断板时观察同板块其他股票的表现。如果其他股票依然强势，说明板块行情没有结束，回封的概率较高；如果其他股票已经开始下跌，说明板块可能退潮，回封的概率较低。</p>
+<p>第四步，等待回封。当股价再次拉升并逼近涨停时，观察是否有足够的买盘推动股价封住涨停。回封时需要有足够的封单金额，并且封单需要持续增加。</p>
+<p>第五步，买入。回封确认后，可以考虑买入。买入时机可以选择在回封的那一刻，或者在回封后封单稳定时。断板回封的仓位需要根据断板的时间、成交量、板块联动等因素综合判断，一般控制在40%到60%之间。</p>
+<p>第六步，止损设置。断板回封买入后，需要设置止损位。止损位可以设置在断板日的最低价下方2%到3%的位置，或者设置在昨日涨停价下方3%到5%的位置。如果股价跌破止损位，需要果断止损出局。</p>
+</section>
+<section id="id12">
+<h2>10.3 弱势买入条件：超跌反弹、跌停打开、缩量回调<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<p>在弱势市场环境中，赚钱效应差，涨停股少，连板股少。此时游资的策略以防守为主，买入机会主要是超跌反弹、跌停打开、缩量回调等低吸机会。弱势环境下的买入需要更加谨慎，仓位也要更轻。</p>
+</section>
+<section id="id13">
+<h2>10.3.1 超跌反弹：急跌后的修复机会<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>超跌反弹是在股票连续下跌后出现的反弹机会。连续下跌的股票积累了大量的套牢盘和获利盘，一旦有资金进场，容易引发反弹。但超跌反弹的确定性较低，需要严格的条件筛选。</p>
+<p>超跌反弹的确认条件包括以下几个方面。</p>
+<p>第一，跌幅必须足够大。超跌反弹的机会主要出现在跌幅达到15%以上的股票上。跌幅越大，反弹的空间越大。判断跌幅的标准包括：股价从近期高点下跌超过15%、股价跌破重要均线支撑、股价创出近期新低等。</p>
+<p>第二，成交量必须萎缩。缩量回调说明卖压逐渐减少，股价开始企稳。放量的下跌可能意味着还有更多的抛压，不适合抄底。判断成交量是否萎缩的标准是：当日成交量小于5日均量，或者成交量持续萎缩3到5个交易日。</p>
+<p>第三，必须有底部企稳信号。底部企稳是指股价不再创新低，开始横盘或者小幅反弹。判断底部企稳的标准包括：股价不再创新低、K线出现止跌形态如锤子线、十字星等、成交量开始放大等。</p>
+<p>第四，板块必须没有退潮。即使是弱势环境，如果板块还有一定的活跃度，超跌反弹的成功率会更高。判断板块是否退潮的标准是：同板块是否有股票还在表现、板块整体是否还有一定的成交量等。</p>
+<p><strong>超跌反弹的具体操作步骤</strong>：</p>
+<p>第一步，筛选超跌股。从近期跌幅较大的股票中筛选，重点关注跌幅超过15%、成交量萎缩、底部开始企稳的股票。可以利用技术指标如KDJ、RSI等辅助判断超跌程度。</p>
+<p>第二步，观察板块联动。超跌股所属的板块如果有其他股票表现，说明板块还有一定的活跃度，可以提高超跌反弹的成功率。如果板块整体沉寂，没有个股表现，需要谨慎。</p>
+<p>第三步，等待买点。超跌反弹的买点包括两种：一是急跌后的第一个反弹阳线，二是盘整后的放量突破。需要在观察确认后再买入，而不是在下跌途中盲目抄底。</p>
+<p>第四步，仓位控制。超跌反弹的仓位应该控制在20%到30%之间，因为弱势环境的风险较大，不宜重仓。买入后如果反弹顺利，可以考虑适当加仓；如果反弹无力，需要果断止损。</p>
+<p>第五步，快进快出。超跌反弹的目标一般是5%到10%，达到目标后应该果断卖出，不能恋战。超跌反弹是弱势环境下的短期机会，不应该期望太大的涨幅。</p>
+</section>
+<section id="id14">
+<h2>10.3.2 跌停打开：极度悲观后的反转机会<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<p>跌停打开是股票从跌停板被打开并开始反弹的情况。跌停打开代表了极度悲观情绪的转变，可能蕴含着反弹甚至反转的机会。但跌停打开的确定性较低，风险较大，需要严格的条件筛选。</p>
+<p>跌停打开的形成机制是这样的：当一只股票连续下跌后，持有者极度悲观，在某个交易日以跌停价开盘。但在开盘后，有资金进场抄底，推动股价从跌停价反弹。这种走势说明市场情绪已经极度悲观，可能已经接近底部。但跌停打开后的走势并不一定都是反弹，也可能是继续下跌，需要严格的确认条件。</p>
+<p>跌停打开的确认条件包括以下几个方面。</p>
+<p>第一，跌停打开时的成交量必须放大。成交量的放大说明有资金进场抄底，这是反弹的前提。如果成交量萎缩，说明没有资金进场，跌停打开可能只是昙花一现。判断成交量是否放大的标准是：当日成交量大于5日均量，或者大于昨日跌停时的成交量。</p>
+<p>第二，跌停打开后的反弹必须有力度。反弹的力度可以通过股价涨幅和成交量的配合来判断。力度强的反弹应该是股价从跌停价快速反弹，涨幅超过5%以上，并且成交量持续放大。力度弱的反弹可能是股价在跌停价附近徘徊，反弹空间有限。</p>
+<p>第三，必须有板块联动或市场环境配合。单独的跌停打开可能只是个别资金的行为，不具有持续性。如果跌停打开时有板块联动或者市场环境转好，说明这次反弹可能有持续性。判断的方法是观察同板块其他股票的表现，以及市场整体的情绪。</p>
+<p>第四，跌停打开的时间不能太晚。开盘后很快打开跌停说明有资金急于进场，反弹的概率较高；下午才打开跌停说明资金做多意愿不强，可能只是技术性反弹。跌停打开的时间最好在10:00之前，最迟不超过11:00。</p>
+<p><strong>跌停打开的具体操作步骤</strong>：</p>
+<p>第一步，观察跌停打开。9:30开盘后观察有股票跌停打开的情况。重点关注那些跌幅大、封单多、人气高的股票的跌停打开机会。</p>
+<p>第二步，分析跌停原因。了解股票跌停的原因，判断是系统性风险还是个股风险。系统性风险下的跌停可能有机会，但个股风险下的跌停需要谨慎。</p>
+<p>第三步，确认反弹力度。跌停打开后观察股价的反弹力度。力度强的反弹可以考虑买入，力度弱的反弹需要谨慎。反弹力度的判断标准包括：涨幅是否超过5%、成交是否放量、是否突破均价线等。</p>
+<p>第四步，仓位控制。跌停打开买入的仓位应该控制在30%到40%之间，因为风险较大。买入后如果反弹顺利，可以考虑加仓；如果反弹无力，需要果断止损。</p>
+<p>第五步，止损设置。跌停打开买入后需要设置止损位。止损位可以设置在当日最低价下方2%到3%的位置。如果股价跌破止损位，需要果断止损出局。</p>
+</section>
+<section id="id15">
+<h2>10.3.3 缩量回调：强势股的二波机会<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<p>缩量回调是强势股在上涨过程中的一次正常回调。强势股在连续上涨后会有获利了结的压力，导致股价回调。但如果回调时成交量萎缩，说明卖压不大，只是正常的获利了结，后市可能还有机会。缩量回调提供了买入强势股的机会。</p>
+<p>缩量回调的确认条件包括以下几个方面。</p>
+<p>第一，股票必须是前期的强势股。缩量回调的机会只存在于强势股中，因为弱势股本身缺乏上涨动力，回调后可能继续下跌。判断强势股的标准包括：近期有涨停记录、股价在20日均线上方、成交量持续放大等。</p>
+<p>第二，回调时的成交量必须萎缩。萎缩的成交量说明卖压主要是获利盘，而不是主力出货。放量的回调可能意味着主力在出货，需要警惕。判断成交量是否萎缩的标准是：回调时的成交量小于上涨时的成交量，且成交量持续萎缩2到3个交易日。</p>
+<p>第三，回调必须在重要支撑位企稳。回调后必须在重要的支撑位如均线、箱体、趋势线等位置企稳。如果跌破支撑位，说明回调可能演变成下跌趋势。判断支撑是否有效的标准是：股价在支撑位上方运行，不创新低。</p>
+<p>第四，必须有再次启动的信号。缩量回调只是提供了买入的机会，真正的买入还需要确认再次启动的信号。再次启动的信号包括：股价重新放量上涨、突破回调高点、成交量重新放大等。</p>
+<p><strong>缩量回调的具体操作步骤</strong>：</p>
+<p>第一步，识别强势股。从近期涨幅较大的强势股中筛选，观察哪些股票在回调。重点关注那些回调缩量、股价在支撑位企稳的股票。</p>
+<p>第二步，观察支撑位。分析强势股的回调是否在重要支撑位企稳。均线支撑、箱体支撑、前高支撑等都是重要的支撑位。如果股价在支撑位上方企稳，可以考虑买入。</p>
+<p>第三步，等待再次启动。缩量回调后需要等待再次启动的信号。再次启动的信号包括：股价放量上涨、突破回调高点、成交量放大等。确认信号出现后再买入，而不是在回调过程中盲目抄底。</p>
+<p>第四步，仓位控制。缩量回调买入的仓位可以控制在40%到50%之间，因为强势股的机会确定性较高。买入后如果上涨顺利，可以考虑加仓；如果跌破支撑位，需要止损。</p>
+<p>第五步，目标位设置。缩量回调买入后需要设置目标位。目标位可以设置在前高附近，或者设置为涨幅15%到20%。达到目标位后需要考虑止盈。</p>
+</section>
+<section id="id16">
+<h2>10.4 封单量与成交量的核心指标<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<p>在买入条件的确认中，封单量和成交量是最重要的技术指标。它们直接反映了市场资金的意愿和股票的供需关系，是判断买入机会的关键依据。</p>
+</section>
+<section id="id17">
+<h2>10.4.1 封单量的分析方法<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<p>封单量是指涨停时挂在买一位置的未成交买单数量。封单量的大小直接反映了市场对该股票的热情和信心。封单量越大，说明市场资金越看好这只股票，做多意愿越强烈。</p>
+<p>封单量的分析需要关注以下几个方面。</p>
+<p>第一，封单量的绝对值。封单量的绝对值可以反映出股票的受关注程度。封单量在1亿以上的股票通常属于市场热门股，封单量在5000万到1亿的属于活跃股，封单量在5000万以下的属于一般股票。但在不同市场环境下，标准可能有所不同。</p>
+<p>第二，封单量的变化。封单量的变化比静态的封单量更重要。封单量持续增加说明做多意愿越来越强，股价可能继续涨停；封单量持续减少说明做多意愿减弱，可能炸板。需要实时关注封单量的变化，特别是以下时间节点：开盘时、午盘时、尾盘时。</p>
+<p>第三，封单量与成交量的比例。封单量与成交量的比例可以反映出股票的供需关系。比例越高，说明买盘越强，卖盘越弱；比例越低，说明买盘虽然强但卖盘也重。封单量与成交量的比例最好在50%以上，才能有效封住涨停。</p>
+<p>第四，封单量的结构。封单量的结构是指封单的分布情况。如果封单主要分布在买一位置，说明市场一致性看多；如果封单分布在多个位置，说明市场存在分歧。大单封顶和小单托底的结构往往意味着主力在控制局面。</p>
+<p><strong>封单量的实战应用</strong>：</p>
+<p>应用一：判断首板是否可以参与。如果首板时封单量持续增加，比例高于50%，可以参与；如果封单量无法增加甚至减少，需要谨慎。</p>
+<p>应用二：判断二板是否可以加仓。如果二板时封单量依然充足，比首板时更大，说明做多意愿强烈，可以加仓；如果封单量萎缩，说明分歧增大，需要观察。</p>
+<p>应用三：判断断板回封是否可以买入。如果断板后封单量能够快速恢复并增加，说明主力实力强劲，可以买入；如果封单量无法恢复，说明主力可能已经放弃，需要谨慎。</p>
+</section>
+<section id="id18">
+<h2>10.4.2 成交量的分析方法<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<p>成交量是股票涨跌的动力和验证。放量上涨说明有资金推动，缩量上涨说明缺乏支撑；放量下跌说明有抛压，缩量下跌说明抛压减轻。成交量的分析需要结合股价走势来综合判断。</p>
+<p>成交量的分析需要关注以下几个方面。</p>
+<p>第一，成交量的位置。成交量需要放在具体的价格位置来分析。上涨过程中的放量是健康的，说明有资金推动；下跌过程中的放量是不利的，说明有资金出逃；盘整过程中的放量可能意味着突破。</p>
+<p>第二，成交量的对比。成交量的对比包括纵向对比和横向对比。纵向对比是指与自身历史成交量对比，判断当前成交量是偏高还是偏低；横向对比是指与同板块其他股票对比，判断该股票的活跃程度。</p>
+<p>第三，成交量的均线。成交量的均线可以过滤掉单日的异常波动，更准确地反映成交量的趋势。常用的成交量均线包括5日均量、10日均量、20日均量等。当成交量在均线上方运行时，说明活跃度较高；当成交量在均线下方运行时，说明活跃度降低。</p>
+<p>第四，成交量的形态。成交量的形态可以预示未来的走势。堆量是指成交量持续放大，往往意味着主力建仓；脉冲量是指成交量突然放大后萎缩，往往意味着主力出货；缩量是指成交量持续萎缩，往往意味着行情清淡。</p>
+<p><strong>成交量的实战应用</strong>：</p>
+<p>应用一：判断首板突破的有效性。如果首板时成交量大于5日均量2倍以上，说明放量有效，可以参与；如果成交量不足，说明可能是假突破，需要谨慎。</p>
+<p>应用二：判断二板确认的可靠性。如果二板时成交量健康，比首板略大或持平，说明上涨动力充足，可以加仓；如果二板时成交量突然萎缩，说明上涨动力不足，需要警惕。</p>
+<p>应用三：判断断板回封的洗盘性质。如果断板时成交量萎缩，说明是正常洗盘，可以等待回封买入；如果断板时成交量放大，说明可能有资金出逃，需要谨慎。</p>
+</section>
+<section id="id19">
+<h2>10.4.3 封单量与成交量的综合应用<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<p>封单量和成交量需要综合分析才能准确判断买入机会。下面介绍几种典型的综合应用场景。</p>
+<p>第一个场景是首板突破的综合判断。首板突破时，封单量应该持续增加，成交量应该放大2倍以上，封单量与成交量的比例应该大于50%。这样的首板突破确定性最高。</p>
+<p>第二个场景是二板确认的综合判断。二板确认时，封单量应该比首板更大或持平，成交量应该健康放大，板块内应该有联动效应。这样的二板确认说明龙头地位稳固。</p>
+<p>第三个场景是断板回封的综合判断。断板时成交量应该萎缩，回封时封单量应该快速恢复增加，封单量与成交量的比例应该大于50%。这样的断板回封说明是正常洗盘。</p>
+<p>第四个场景是弱势低吸的综合判断。弱势低吸时，成交量应该是先缩后放，股价在支撑位企稳，封单量虽然不大但稳定。这样的形态说明有资金进场抄底。</p>
+</section>
+<section id="id20">
+<h2>10.5 买入条件的时间窗口<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<p>买入条件不仅要看技术面和基本面的确认，还需要关注时间窗口。不同的时间点，买入条件的有效性是不同的。选择正确的时间窗口介入，可以提高买入的成功率。</p>
+</section>
+<section id="id21">
+<h2>10.5.1 开盘30分钟的时间窗口<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
+<p>开盘30分钟是全天最重要的黄金时间。这段时间是资金博弈最激烈的时间，也是很多主力资金决定当天操作策略的时间。在这段时间内，股票的表现往往决定了全天的走势。</p>
+<p>开盘30分钟可以分为三个阶段。第一阶段是9:30到9:35，这是集合竞价后的前5分钟，是资金快速博弈的时间。这段时间的走势往往受到隔夜消息的影响，如果股价高开高走，说明多头强劲；如果高开低走，说明空头占优。第二阶段是9:35到9:50，这是开盘后的第一个30分钟，是主力资金建仓的时间。这段时间股价往往会有较大的波动，是短线交易的关键时间窗口。第三阶段是9:50到10:00，这是多空双方平衡的时间，股价开始趋于稳定，是判断当天走势的重要参考。</p>
+<p>首板突破的最佳时间窗口是9:30到9:45之间。这个时间段涨停的股票往往具有较强的做多意愿，因为主力资金选择在开盘第一时间封板，说明决心坚定。太晚涨停的股票可能是因为封板犹豫，或者主力实力不足。</p>
+<p>二板确认的最佳时间窗口是9:30到10:00之间。这个时间段内确认二板的股票，说明昨日的首板得到了市场的认可，今日有资金愿意继续做多。超过10:00才涨停的二板股确定性会下降。</p>
+</section>
+<section id="id22">
+<h2>10.5.2 盘中时间的买入机会<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<p>除了开盘30分钟，盘中时间也有一些买入机会需要关注。</p>
+<p>第一个是10:00到11:00之间。这个时间段是多空双方博弈最激烈的时间，也是很多股票选择方向的时间。如果在这个时间段内出现放量突破或者封板，往往具有较强的确定性。但超过10:00才涨停的首板股确定性会下降，因为已经给了足够的交易时间。</p>
+<p>第二个是13:00到13:30之间。这个时间段是下午开盘后的前30分钟，往往会有一些短线机会出现。上午强势的股票可能在下午继续表现；上午弱势的股票可能在下午出现反弹。断板回封的机会在这个时间段比较常见。</p>
+<p>第三个是14:30到15:00之间。这个时间段是尾盘阶段，是资金收尾的时间。强势股可能会在尾盘封板，弱势股可能会在尾盘加速下跌。尾盘涨停的股票往往确定性不如早盘涨停的股票，但在某些情况下也可能有机会。</p>
+</section>
+<section id="id23">
+<h2>10.5.3 时间窗口的实战应用<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<p>实战中需要根据不同的时间窗口调整买入策略。</p>
+<p>早盘策略：9:30到10:00之间是进攻的最佳时间窗口。在这个时间段内，应该积极寻找首板突破和二板确认的机会。买入后如果股价强势，可以持有；如果股价走弱，需要及时止损。</p>
+<p>盘中策略：10:00到14:00之间是观察和等待的时间窗口。在这个时间段内，应该观察强势股的表现，等待买入机会。如果强势股出现回调，可以考虑缩量回调的买入机会；如果强势股继续强势，可以等待断板回封的机会。</p>
+<p>尾盘策略：14:30到15:00之间是防守的时间窗口。在这个时间段内，应该减少买入操作，特别是追高操作。因为尾盘买入后当日无法卖出，面临着隔夜的不确定性。尾盘只适合轻仓参与一些确定性较高的机会。</p>
+</section>
+<section id="id24">
+<h2>10.6 不同市场环境下的买入条件<a class="headerlink" href="#id24" title="Link to this heading">#</a></h2>
+<p>买入条件需要根据市场环境的不同进行调整。强势市场、弱势市场、冰点市场的买入条件有所不同。</p>
+</section>
+<section id="id25">
+<h2>10.6.1 强势市场的买入条件<a class="headerlink" href="#id25" title="Link to this heading">#</a></h2>
+<p>强势市场的特征是：赚钱效应好，涨停股多，连板股多，市场情绪高涨。在强势市场中，游资的操作策略是积极进攻，做多龙头股。</p>
+<p>强势市场的买入条件可以适当放宽。首板突破时，成交量放大的标准可以降低，只要成交量大于5日均量1.5倍即可；二板确认时，可以适当追高，因为市场情绪高涨会消化获利盘；断板回封时，可以更加积极地参与，因为强势市场中断板往往是洗盘而非出货。</p>
+<p>强势市场的仓位管理应该是：轻仓试探，确认后加仓。初始仓位可以控制在50%左右，确认信号后再加仓到80%甚至100%。但需要注意，强势市场虽然确定性高，但并不意味着没有风险，依然需要严格止损。</p>
+</section>
+<section id="id26">
+<h2>10.6.2 弱势市场的买入条件<a class="headerlink" href="#id26" title="Link to this heading">#</a></h2>
+<p>弱势市场的特征是：赚钱效应差，涨停股少，连板股少，市场情绪低迷。在弱势市场中，游资的操作策略是保守防守，少做甚至不做。</p>
+<p>弱势市场的买入条件需要更加严格。首板突破时，成交量放大的标准需要提高，必须大于5日均量2倍才能参与；二板确认时，需要谨慎追高，因为市场情绪差容易导致冲高回落；断板回封时，需要等待更好的确认信号，因为弱势市场的断板可能是出货而非洗盘。</p>
+<p>弱势市场的仓位管理应该是：轻仓试探，快进快出。初始仓位应该控制在30%以下，目标是5%到10%的收益，达到目标后果断卖出。弱势市场不适合重仓持股，因为不确定性太大。</p>
+</section>
+<section id="id27">
+<h2>10.6.3 冰点市场的买入条件<a class="headerlink" href="#id27" title="Link to this heading">#</a></h2>
+<p>冰点市场是弱势市场的极端情况，特征是：涨停股数量极少，市场情绪极度低迷，短线交易机会几乎消失。在冰点市场中，游资的策略应该是观望等待，而不是强行交易。</p>
+<p>冰点市场的买入条件需要更加严格。此时应该减少操作甚至不操作，等待市场情绪恢复。如果市场出现恐慌性下跌，可能会有超跌反弹的机会，但需要更加谨慎地确认。冰点市场的仓位应该控制在20%以下，甚至空仓等待。</p>
+</section>
+<section id="id28">
+<h2>10.7 买入条件的信号汇总<a class="headerlink" href="#id28" title="Link to this heading">#</a></h2>
+<p>为了便于实战应用，本节将买入条件的关键信号汇总成表格，方便快速查阅和决策。</p>
+</section>
+<section id="id29">
+<h2>10.7.1 强势市场买入信号<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
+</section>
+<section id="id30">
+<h2>10.7.2 弱势市场买入信号<a class="headerlink" href="#id30" title="Link to this heading">#</a></h2>
+</section>
+<section id="id31">
+<h2>10.7.3 买入条件的禁区<a class="headerlink" href="#id31" title="Link to this heading">#</a></h2>
+<p>以下情况严禁买入，需要特别注意。</p>
+<p>第一，市场环境不确认时不买。如果市场整体弱势，赚钱效应差，即使有个股出现涨停也不能盲目买入。因为在大环境不好的情况下，个股的独立性难以维持，很容易冲高回落。</p>
+<p>第二，板块不联动时不买。如果一只股票涨停但没有板块联动，说明可能是主力自救或者消息刺激，这样的涨停持续性有限，不应该重仓参与。</p>
+<p>第三，信号不确认时不买。如果买入条件没有完全满足，比如成交量不够、封单不足、时间太晚等，应该放弃这次机会，而不是抱着侥幸心理强行买入。</p>
+<p>第四，不符合自己的交易系统时不买。每个交易者都应该有自己严格的交易系统，买入条件必须符合自己的系统。如果某笔交易不在自己的系统之内，即使看起来有机会也应该放弃。</p>
+</section>
+<section id="id32">
+<h2>10.8 实战案例：强势环境买入<a class="headerlink" href="#id32" title="Link to this heading">#</a></h2>
+</section>
+<section id="id33">
+<h2>案例一：首板突破买入<a class="headerlink" href="#id33" title="Link to this heading">#</a></h2>
+<p><strong>时间</strong>：2026年3月15日
+<strong>市场环境</strong>：强势市场，赚钱效应好，涨停股超过80家
+<strong>题材</strong>：人工智能，板块涨停超过10家
+<strong>股票</strong>：科技龙头A，代码00XXXX</p>
+<p><strong>买入过程</strong>：</p>
+<ol class="arabic simple">
+<li><p><a href="#id34"><span class="problematic" id="id35">**</span></a>盘前准备**（3月14日收盘后）：
+- 复盘当日涨停股，筛选出人工智能板块的候选股
+- 研究人工智能板块的催化剂：国家出台AI产业发展政策
+- 分析候选股的基本面和技术面，制定买入计划
+- 选定科技龙头A作为主要目标，制定买入价格区间</p></li>
+<li><p><a href="#id36"><span class="problematic" id="id37">**</span></a>集合竞价观察**（3月15日9:15-9:25）：
+- 科技龙头A高开5%，符合预期
+- 成交量明显放大，是昨日的3倍
+- 人工智能板块整体高开，联动效应良好
+- 决定在开盘后买入</p></li>
+<li><p><a href="#id38"><span class="problematic" id="id39">**</span></a>买入执行**（3月15日9:30-9:40）：
+- 开盘后股价快速拉升，在9:37涨停
+- 涨停时封单金额2亿，超过当日成交的60%
+- 封单持续增加，板块内其他股票跟涨
+- 在9:38以涨停价买入，仓位60%</p></li>
+<li><p><a href="#id40"><span class="problematic" id="id41">**</span></a>买后处理**（3月15日收盘前）：
+- 股价牢牢封住涨停，封单稳定在1.5亿以上
+- 人工智能板块涨停超过10家，联动效应强
+- 持有，没有操作</p></li>
+<li><p><a href="#id42"><span class="problematic" id="id43">**</span></a>次日处理**（3月16日）：
+- 股价高开8%，强势上涨
+- 在10:00前封住二板，确认龙头地位
+- 持有，没有操作</p></li>
+<li><p><strong>后续走势</strong>：
+- 股价连续涨停，3个交易日后高位震荡
+- 在高位震荡时选择止盈，收益达到25%</p></li>
+</ol>
+<p><strong>操作总结</strong>：
+- 盘前准备充分，筛选出正确的目标
+- 集合竞价判断准确，高开高走符合预期
+- 买入时机合适，在首板确认后及时买入
+- 仓位控制合理，60%仓位既能把握机会又能控制风险
+- 持有耐心，让利润奔跑</p>
+</section>
+<section id="id44">
+<h2>案例二：二板确认买入<a class="headerlink" href="#id44" title="Link to this heading">#</a></h2>
+<p><strong>时间</strong>：2026年4月10日
+<strong>市场环境</strong>：强势市场，赚钱效应好，连板股多
+<strong>题材</strong>：新能源车，政策利好不断
+<strong>股票</strong>：新能源龙头B，代码60XXXX</p>
+<p><strong>买入过程</strong>：</p>
+<ol class="arabic simple">
+<li><p><a href="#id45"><span class="problematic" id="id46">**</span></a>盘前准备**（4月9日收盘后）：
+- 4月9日首板涨停，确认新能源板块的机会
+- 分析封单量和成交量，选定新能源龙头B
+- 制定买入计划：二板确认后在涨停价买入</p></li>
+<li><p><a href="#id47"><span class="problematic" id="id48">**</span></a>次日开盘观察**（4月10日9:30）：
+- 股价高开6%，超预期
+- 开盘后快速拉升，9:45涨停
+- 二板确认，龙头地位确立</p></li>
+<li><p><a href="#id49"><span class="problematic" id="id50">**</span></a>买入执行**（4月10日9:50）：
+- 确认二板，封单金额3亿，充足
+- 成交量健康，板块联动强
+- 在9:52以涨停价买入，仓位75%</p></li>
+<li><p><strong>买后处理</strong>：
+- 股价牢牢封住涨停，封单稳定
+- 持有，没有操作</p></li>
+<li><p><strong>后续走势</strong>：
+- 连续涨停，5个交易日后开板
+- 开板当日选择止盈，收益达到35%</p></li>
+</ol>
+<p><strong>操作总结</strong>：
+- 二板确认买入确定性高
+- 龙头地位确认后可以重仓
+- 持仓耐心，让利润奔跑</p>
+</section>
+<section id="id51">
+<h2>案例三：断板回封买入<a class="headerlink" href="#id51" title="Link to this heading">#</a></h2>
+<p><strong>时间</strong>：2026年5月5日
+<strong>市场环境</strong>：强势市场，赚钱效应好
+<strong>题材</strong>：芯片，国产替代加速
+<strong>股票</strong>：芯片龙头C，代码00XXXX</p>
+<p><strong>买入过程</strong>：</p>
+<ol class="arabic simple">
+<li><p><a href="#id52"><span class="problematic" id="id53">**</span></a>断板识别**（5月5日14:20）：
+- 芯片龙头C连续4个涨停后，14:20打开涨停
+- 断板时成交量萎缩，不足昨日的30%
+- 同板块其他股票依然强势，没有退潮
+- 判断是正常洗盘，不是出货</p></li>
+<li><p><a href="#id54"><span class="problematic" id="id55">**</span></a>观察等待**（5月5日14:25-14:35）：
+- 股价在涨幅8%附近徘徊，没有继续下跌
+- 成交量持续萎缩，说明卖压不大
+- 14:30开始有资金进场，股价开始拉升</p></li>
+<li><p><a href="#id56"><span class="problematic" id="id57">**</span></a>回封买入**（5月5日14:32）：
+- 14:32股价再次涨停，封单金额2亿
+- 回封时封单持续增加，做多意愿强烈
+- 在14:33以涨停价买入，仓位50%</p></li>
+<li><p><strong>买后处理</strong>：
+- 股价牢牢封住涨停，直到收盘
+- 封单稳定在1.8亿以上
+- 持有，没有操作</p></li>
+<li><p><strong>后续走势</strong>：
+- 次日高开高走，继续涨停
+- 断板后反包，收益再增20%</p></li>
+</ol>
+<p><strong>操作总结</strong>：
+- 断板时成交量萎缩是洗盘的关键信号
+- 板块没有退潮说明行情没有结束
+- 回封及时买入，可以获得较好买点
+- 断板回封后往往有反包行情</p>
+</section>
+<section id="id58">
+<h2>10.9 实战案例：弱势环境买入<a class="headerlink" href="#id58" title="Link to this heading">#</a></h2>
+</section>
+<section id="id59">
+<h2>案例四：超跌反弹买入<a class="headerlink" href="#id59" title="Link to this heading">#</a></h2>
+<p><strong>时间</strong>：2026年4月20日
+<strong>市场环境</strong>：弱势市场，赚钱效应差
+<strong>题材</strong>：医药，板块整体下跌
+<strong>股票</strong>：医药股D，代码00XXXX</p>
+<p><strong>买入过程</strong>：</p>
+<ol class="arabic simple">
+<li><p><a href="#id60"><span class="problematic" id="id61">**</span></a>筛选超跌股**（4月19日）：
+- 从近期跌幅较大的股票中筛选
+- 医药股D跌幅达到20%，符合超跌条件
+- 成交量开始萎缩，说明卖压减轻
+- 股价开始企稳，不再创新低</p></li>
+<li><p><a href="#id62"><span class="problematic" id="id63">**</span></a>买入执行**（4月20日10:30）：
+- 股价在连续下跌后出现第一个阳线
+- 成交量微微放大，有资金进场
+- 在10:30以涨幅3%的价格买入，仓位25%</p></li>
+<li><p><strong>买后处理</strong>：
+- 股价小幅上涨，收盘涨幅5%
+- 目标位设置在8%，耐心等待</p></li>
+<li><p><a href="#id64"><span class="problematic" id="id65">**</span></a>卖出执行**（4月21日）：
+- 次日股价达到目标位8%
+- 在开盘后择机止盈，收益8%</p></li>
+</ol>
+<p><strong>操作总结</strong>：
+- 弱势市场仓位要轻，不能重仓
+- 超跌反弹目标位5-10%，达到就要走
+- 快进快出，不能恋战</p>
+</section>
+<section id="id66">
+<h2>案例五：跌停打开买入<a class="headerlink" href="#id66" title="Link to this heading">#</a></h2>
+<p><strong>时间</strong>：2026年5月8日
+<strong>市场环境</strong>：弱势市场，市场恐慌
+<strong>题材</strong>：消费，个股利空
+<strong>股票</strong>：消费股E，代码60XXXX</p>
+<p><strong>买入过程</strong>：</p>
+<ol class="arabic simple">
+<li><p><a href="#id67"><span class="problematic" id="id68">**</span></a>识别机会**（5月8日9:35）：
+- 消费股E连续下跌后以跌停价开盘
+- 9:35跌停板打开，成交量放大
+- 股价从跌停价快速反弹，涨幅超过5%
+- 判断有资金进场抄底</p></li>
+<li><p><a href="#id69"><span class="problematic" id="id70">**</span></a>确认反弹**（5月8日9:40）：
+- 反弹力度强，从跌停到涨幅5%只用5分钟
+- 成交量持续放大，说明资金进场积极
+- 同板块其他股票没有跟跌，说明板块没有退潮</p></li>
+<li><p><a href="#id71"><span class="problematic" id="id72">**</span></a>买入执行**（5月8日9:42）：
+- 在涨幅5%的价格买入，仓位30%
+- 止损设置在当日最低价下方2%</p></li>
+<li><p><strong>买后处理</strong>：
+- 股价在涨幅5%附近震荡，尾盘有所回落
+- 收盘涨幅3%，走势还可以</p></li>
+<li><p><a href="#id73"><span class="problematic" id="id74">**</span></a>次日处理**（5月9日）：
+- 股价低开，没有承接
+- 在开盘后触及止损位，果断止损
+- 最终亏损3%</p></li>
+</ol>
+<p><strong>操作总结</strong>：
+- 跌停打开的风险较大，需要严格的止损
+- 反弹后如果次日走势不及预期，要果断出局
+- 弱势市场即使操作正确也可能亏损，要接受</p>
+</section>
+<section id="id75">
+<h2>10.10 买入条件常见错误与纠正<a class="headerlink" href="#id75" title="Link to this heading">#</a></h2>
+</section>
+<section id="id76">
+<h2>10.10.1 错误一：信号不确认就买入<a class="headerlink" href="#id76" title="Link to this heading">#</a></h2>
+<p>这是最常见的错误。很多交易者在看到股价上涨时就急于买入，而没有仔细确认买入条件是否满足。信号不确认就买入的后果往往是买在高位，然后被套。</p>
+<p>纠正方法是：严格遵守买入条件，只有当所有条件都满足时才买入。在买入之前问自己：市场环境确认了吗？题材确认了吗？龙头地位确认了吗？买点确认了吗？任何一项没有确认，都不应该买入。</p>
+</section>
+<section id="id77">
+<h2>10.10.2 错误二：仓位过重<a class="headerlink" href="#id77" title="Link to this heading">#</a></h2>
+<p>很多交易者在遇到自认为确定的机会时会重仓甚至全仓买入，希望一把赚大的。但这种方法的风险很大，一旦判断错误，损失会很惨重。</p>
+<p>纠正方法是：控制仓位，始终留有余地。不管多有把握的机会，仓位都不能超过80%；一般情况下，仓位应该控制在50%到70%之间。保留的资金可以在确认后加仓，也可以在止损时减少损失。</p>
+</section>
+<section id="id78">
+<h2>10.10.3 错误三：不设止损<a class="headerlink" href="#id78" title="Link to this heading">#</a></h2>
+<p>很多交易者在买入时不设止损位，或者设了止损位但不执行。这种做法在判断正确时能赚更多，但判断错误时会损失惨重。</p>
+<p>纠正方法是：买入时必须设定止损位，止损位的设置要合理。止损位可以设置在重要的支撑位下方，也可以设置为买入价的3%到5%。止损位一旦触发，必须果断执行，不能犹豫。</p>
+</section>
+<section id="id79">
+<h2>10.10.4 错误四：过度自信<a class="headerlink" href="#id79" title="Link to this heading">#</a></h2>
+<p>很多交易者在连续盈利后会变得过度自信，认为自己已经掌握了交易的秘诀，开始忽视买入条件。这种心态往往会导致大幅回撤。</p>
+<p>纠正方法是：始终保持敬畏市场的心态。不管过去取得了多大的成功，都要严格执行买入条件，不能因为自大而忽视风险。每一次交易都应该当作新的交易来对待，不能有惯性思维。</p>
+</section>
+<section id="id80">
+<h2>10.11 本章小结<a class="headerlink" href="#id80" title="Link to this heading">#</a></h2>
+<p>买入条件是游资交易系统的核心。游资之所以能够实现稳定盈利，关键在于他们只做确认的信号，而不是凭感觉、猜点位、听消息盲目买入。</p>
+</section>
+<section id="id81">
+<h2>强势市场买入条件<a class="headerlink" href="#id81" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>首板突破</strong>：首次涨停、成交量放大2倍以上、板块联动、时间早（30分钟内）、封单充足</p></li>
+<li><p><strong>二板确认</strong>：二板涨停、板块梯队完整、龙头地位确认、题材配合、时间早（1小时内）</p></li>
+<li><p><strong>断板回封</strong>：龙头断板、成交量萎缩、板块未退潮、资金回流重新封板</p></li>
+</ol>
+</section>
+<section id="id82">
+<h2>弱势市场买入条件<a class="headerlink" href="#id82" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>超跌反弹</strong>：跌幅超过15%、缩量回调、底部企稳、板块未退潮</p></li>
+<li><p><strong>跌停打开</strong>：跌停打开、成交量放大、反弹有力、时间早（10:00前）</p></li>
+<li><p><strong>缩量回调</strong>：强势股回调、量能萎缩、在支撑位企稳、再次启动信号确认</p></li>
+</ol>
+</section>
+<section id="id83">
+<h2>封单量与成交量关键指标<a class="headerlink" href="#id83" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>封单量</strong>：持续增加说明做多意愿强，萎缩说明可能炸板</p></li>
+<li><p><strong>成交量</strong>：放量上涨是健康走势，缩量上涨需警惕</p></li>
+<li><p><strong>综合判断</strong>：封单量与成交量比例大于50%才能有效封板</p></li>
+</ol>
+</section>
+<section id="id84">
+<h2>买入纪律<a class="headerlink" href="#id84" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>不追高</strong>：只在确认后买入，不盲目追涨</p></li>
+<li><p><strong>不抄底</strong>：等待确认信号，不随意抄底</p></li>
+<li><p><strong>不贪心</strong>：接受不完美的买点，不追求最低点</p></li>
+<li><p><strong>不恋战</strong>：买错立即止损，不幻想等待回本</p></li>
+</ol>
+<p>记住：买入是交易中最关键的环节。没有确认的信号，就不要买入。这是保护本金的第一步，也是盈利的前提。严格执行买入条件，是实现稳定盈利的基础。</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="上一页">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">part4-买入系统篇</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="11-%E4%B9%B0%E5%85%A5%E6%97%B6%E6%9C%BA.html"
+       title="下一页">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">第11章 买入时机：最佳买点</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">10.1 买入原则：只做确认的信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.1.1 为什么必须只做确认的信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.1.2 买入的三大核心原则</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.1.3 买入的三大确认条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.2 强势买入条件：首板突破、二板确认、断板回封</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.2.1 首板突破：启动点的确认</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.2.2 二板确认：龙头地位的确立</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.2.3 断板回封：分歧后的再次确认</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.3 弱势买入条件：超跌反弹、跌停打开、缩量回调</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.3.1 超跌反弹：急跌后的修复机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.3.2 跌停打开：极度悲观后的反转机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.3.3 缩量回调：强势股的二波机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.4 封单量与成交量的核心指标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">10.4.1 封单量的分析方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">10.4.2 成交量的分析方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">10.4.3 封单量与成交量的综合应用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">10.5 买入条件的时间窗口</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">10.5.1 开盘30分钟的时间窗口</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">10.5.2 盘中时间的买入机会</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">10.5.3 时间窗口的实战应用</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">10.6 不同市场环境下的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">10.6.1 强势市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">10.6.2 弱势市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">10.6.3 冰点市场的买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">10.7 买入条件的信号汇总</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">10.7.1 强势市场买入信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">10.7.2 弱势市场买入信号</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">10.7.3 买入条件的禁区</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">10.8 实战案例：强势环境买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">案例一：首板突破买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">案例二：二板确认买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">案例三：断板回封买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">10.9 实战案例：弱势环境买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">案例四：超跌反弹买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">案例五：跌停打开买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id75">10.10 买入条件常见错误与纠正</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id76">10.10.1 错误一：信号不确认就买入</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id77">10.10.2 错误二：仓位过重</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id78">10.10.3 错误三：不设止损</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id79">10.10.4 错误四：过度自信</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id80">10.11 本章小结</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id81">强势市场买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id82">弱势市场买入条件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id83">封单量与成交量关键指标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id84">买入纪律</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+作者： Stock Assistant
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, Stock Assistant.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  最后更新于 2026-05-16 22:35:52.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, Stock Assistant.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7创建。
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
