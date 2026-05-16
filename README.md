@@ -1,135 +1,305 @@
-# 游资心法教材 - HTML 构建工具
+# 📚 游资心法：从入门到大师的进阶之路
 
-这是一套用于将 Markdown 格式的教材转换为 HTML 文档的自动化脚本工具，已部署到 GitHub Pages。
+<div align="center">
+  <img src="https://img.shields.io/github/last-commit/a576378368/quant-mentor?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/github/license/a576378368/quant-mentor?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/badge/Python-3.7+-blue?style=flat-square&logo=python" />
+  <img src="https://img.shields.io/badge/Sphinx-7.4.7-green?style=flat-square&logo=sphinx" />
+</div>
 
-## 功能特性
+> "功夫未到时，你即使看了全部实盘，也不能了解；功夫到了，只言片语便知。"
+> —— 炒股养家
 
-- ✅ 自动检测和安装 Python 环境
-- ✅ 自动管理虚拟环境
-- ✅ 自动安装 Sphinx 依赖
-- ✅ 支持增量构建
-- ✅ 生成美观的 HTML 文档
-- ✅ 包含搜索和索引功能
-- ✅ GitHub Pages 自动部署
+这本书不是教你如何一夜暴富，而是教你如何建立一套可持续的盈利系统。
 
-## 快速开始
+**游资不是赌博，而是一门职业，需要信念、纪律、和系统。**
 
-### 1. 构建 HTML 文档
+---
 
-构建 HTML 文档：
+## 📖 目录
+
+- [📖 目录](#-目录)
+- [✨ 特性](#-特性)
+- [🚀 快速开始](#-快速开始)
+- [🔧 构建文档](#-构建文档)
+- [🎨 样式特点](#-样式特点)
+- [📞 联系方式](#-联系方式)
+- [📋 更新日志](#-更新日志)
+- [🙏 致谢](#-致谢)
+- [📄 许可证](#-许可证)
+
+---
+
+## ✨ 特性
+
+### 🎨 精美UI设计
+- 专业金融风格主题
+- 深色/浅色模式自动切换
+- 平滑滚动和交互动画
+
+### 📱 响应式布局
+- 完美适配桌面端和移动端
+- 智能导航栏和侧边栏
+- 表格和代码块自适应
+
+### 🚀 高性能
+- Sphinx 7.4.7 构建
+- MyST-Parser Markdown 支持
+- 快速构建和部署
+
+### 📖 优质内容
+- 14个完整篇章
+- 45+ 篇深度文章
+- 实战案例和口诀总结
+
+---
+
+## 🚀 快速开始
+
+### 在线阅读
+
+点击下方按钮直接阅读：
+
+[📖 在线阅读](https://a576378368.github.io/quant-mentor/)
+
+### 本地预览
 
 ```bash
+# 1. 克隆仓库
+git clone https://github.com/a576378368/quant-mentor.git
+cd quant-mentor
+
+# 2. 安装依赖
+pip install -r requirements.txt
+
+# 3. 构建文档
 ./build-html.sh build
-```
 
-### 2. 查看文档
-
-在浏览器中打开：
-
-```bash
+# 4. 打开文档
 open docs/index.html
 # 或
 xdg-open docs/index.html
 ```
 
-## 命令说明
+---
 
-### build-html.sh
+## 🔧 构建文档
 
-主要构建脚本，支持以下命令：
+### 基础构建
+
+```bash
+# 构建 HTML 文档
+./build-html.sh build
+
+# 完整重建（清理后重新构建）
+./build-html.sh rebuild
+
+# 仅生成索引
+./build-html.sh prepare
+```
+
+### 清理构建
+
+```bash
+# 清理构建文件
+./build-html.sh clean
+```
+
+### 命令说明
 
 | 命令 | 说明 |
 |------|------|
 | `build` | 构建HTML文档（默认） |
 | `rebuild` | 清理后重新构建 |
+| `prepare` | 仅生成章节索引 |
 | `clean` | 清理构建文件 |
 | `help` | 显示帮助信息 |
 
-## 目录结构
+---
 
-```
-游资心法教材工程/
-├── build-html.sh              # 主构建脚本
-├── README.md                  # 本文档
-├── requirements.txt           # Python 依赖
-├── chapters/                  # Markdown 源文件
-│   ├── part1-认知升级篇/
-│   │   ├── index.rst
-│   │   └── 01-市场本质.md
-│   ├── part2-择时系统篇/
-│   │   ├── index.rst
-│   │   └── ...
-│   └── ...
-├── sphinx/                    # Sphinx 构建配置
-│   ├── conf.py                # Sphinx 配置文件
-│   ├── index.rst              # 主索引文件
-│   ├── _static/               # 静态资源
-│   └── ...
-├── docs/                      # 构建输出（GitHub Pages）
-│   ├── index.html
-│   ├── part1-认知升级篇/
-│   └── ...
-└── venv/                      # Python 虚拟环境
-```
+## 🎨 样式特点
 
-## 配置说明
+### 金融专业风格
+- **主题色**: 深蓝色 (#1e40af)，代表稳健和专业
+- **强调色**: 金色 (#f59e0b)，代表财富和机会
+- **配色方案**: 符合金融行业的专业感
 
-### Sphinx 配置 (sphinx/conf.py)
+### 用户体验优化
+- ✅ **深色模式**: 自动检测系统偏好
+- ✅ **平滑滚动**: 流畅的阅读体验
+- ✅ **响应式设计**: 完美适配各种设备
+- ✅ **代码高亮**: 专业的代码块样式
 
-```python
-project = u'游资心法'
-copyright = u'2026, Stock Assistant'
-author = u'Stock Assistant'
-release = '1.0'
-
-html_theme = 'sphinx-book-theme'  # 主题
-```
-
-## 常见问题
-
-### 1. 警告信息
-
-构建时可能出现一些警告（如标题下划线不匹配），这不会影响文档生成，可以忽略。
-
-### 2. 主题缺失
-
-如果构建失败，检查依赖是否安装完整：
-
-```bash
-pip install sphinx myst-parser sphinx-book-theme sphinx-copybutton sphinx-design
-```
-
-### 3. 清理构建
-
-如果需要完全重新构建：
-
-```bash
-./build-html.sh rebuild
-```
-
-## 工作流程
-
-1. **编写 Markdown** - 在 `chapters/` 目录下编写 Markdown 文件
-2. **运行构建** - 执行 `./build-html.sh build`
-3. **查看效果** - 在浏览器中预览 `docs/index.html`
-4. **部署更新** - 推送到 GitHub，GitHub Pages 自动更新
-
-## 相关工具
-
-- **Sphinx** - Python 文档生成工具
-- **MyST** - Markdown 扩展
-- **sphinx-book-theme** - 现代化主题
-- **Python venv** - 虚拟环境管理
-
-## 技术支持
-
-如有问题，请检查：
-1. Python 版本 >= 3.7
-2. 网络连接（用于安装依赖）
-3. 文件权限
+### 交互特性
+- 🎯 **锚点导航**: 点击标题快速跳转
+- 🔍 **快速搜索**: 内置搜索功能
+- 📋 **一键复制**: 代码块一键复制
+- ⌨️ **键盘导航**: 左右键翻页
 
 ---
 
-**版本**: 1.0
-**更新时间**: 2026-05-16
-**GitHub Pages**: https://a576378368.github.io/quant-mentor/
+## 📚 内容结构
+
+### 第一部分：认知升级篇
+- 市场本质：财富再分配的博弈场
+- 游资之道：职业投机的艺术
+- 心法与信念：成功的基石
+
+### 第二部分：择时系统篇
+- 大盘环境判断：强势、弱势、平衡
+- 情绪周期理论：冰点、高潮与市场轮回
+- 不同环境下的操作策略
+
+### 第三部分：选股系统篇
+- 新题材识别：发现机会的起点
+- 龙头股筛选：市场精神领袖
+- 选股公式：多点共振
+
+### 第四部分：买入系统篇
+- 买入条件：确认的信号
+- 买入时机：最佳买点
+- 买入纪律：严格执行
+
+### 第五部分：仓位管理系统
+- 仓位计算：科学的分配艺术
+- 仓位分级：科学的五级体系
+- 仓位调整：动态优化
+
+### 第六部分：卖出系统篇
+- 卖出信号：龙头断板、板块退潮
+- 卖出纪律：不贪不恋
+- 止盈止损：保护本金
+
+### 第七部分：风控系统篇
+- 风控指标：单日3%、最大回撤10%
+- 风控措施：触发即执行
+- 风险管理：生存第一
+
+### 第八部分：实战技巧篇
+- 龙头打板：强势买入
+- 低吸回封：弱势买点
+- T+0操作：日内交易增强收益
+
+### 第九部分：游资代表篇
+- 炒股养家：情绪周期理论的开创者
+- 赵老哥：龙头战法大师
+- 章盟主：趋势战法专家
+- 徐翔：涨停板敢死队总舵主
+
+### 第十部分：学习路径篇
+- 学习阶段：入门→进阶→精通→大师
+- 学习方法：理论结合实践
+- 向高手学习：站在巨人的肩膀上
+
+### 第十一部分：常见误区篇
+- 误区一：追高杀跌
+- 误区二：频繁操作
+- 误区三：不设止损
+- 误区四：盲目自信
+
+### 第十二部分：实战案例篇
+- 案例一：科技龙头股（强势环境）
+- 案例二：超跌反弹（弱势环境）
+- 案例三：情绪冰点（退潮后）
+
+### 第十三部分：成功要素篇
+- 信念：成功的基石
+- 纪律：盈利的保障
+- 耐心：等待的艺术
+- 学习：持续进步
+
+### 第十四部分：总结篇
+- 核心思想
+- 操作口诀
+- 成功之路
+
+---
+
+## 📧 联系方式
+
+有任何问题或建议，欢迎联系我：
+
+<div align="center" style="margin: 2rem 0; padding: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; color: white;">
+  <h2 style="margin: 0;">📧 联系我</h2>
+  <p style="margin: 1rem 0; opacity: 0.9;">欢迎提出建议、报告问题或交流学习心得</p>
+  <a href="mailto:576378368@qq.com" style="display: inline-block; padding: 0.75rem 1.5rem; background: white; color: #667eea; text-decoration: none; border-radius: 25px; font-weight: 600; margin-top: 1rem;">
+    发送邮件
+  </a>
+</div>
+
+### 其他联系方式
+
+- 🐦 Twitter: [@quant_mentor](https://twitter.com/quant_mentor)
+- 💬 Telegram: [@quant_mentor](https://t.me/quant_mentor)
+- 📖 公众号: 游资心法
+
+---
+
+## 📋 更新日志
+
+### v1.0.0 (2026-05-16)
+- ✅ 初始化项目，基于 Sphinx 构建
+- ✅ 实现专业金融风格主题
+- ✅ 支持深色/浅色模式
+- ✅ 优化移动端体验
+- ✅ 添加完整内容结构
+
+### v0.9.0 (2026-05-15)
+- 🚧 开发中...
+
+---
+
+## 🙏 致谢
+
+感谢以下项目的支持：
+
+- [Sphinx](https://www.sphinx-doc.org/) - 文档生成工具
+- [MyST-Parser](https://myst-parser.readthedocs.io/) - Markdown 支持
+- [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/) - 专业主题
+- [sphinx-copybutton](https://sphinx-copybutton.readthedocs.io/) - 代码复制
+- [sphinx-design](https://sphinx-design.readthedocs.io/) - 设计组件
+
+---
+
+## 📄 许可证
+
+本项目采用 [MIT License](LICENSE) 许可证。
+
+```
+MIT License
+
+Copyright (c) 2026 Stock Assistant
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+<div align="center">
+  <p style="margin-top: 2rem; color: var(--text-secondary);">
+    📚 游资心法 · 从入门到大师的进阶之路<br>
+    作者: Stock Assistant | 邮箱: <a href="mailto:576378368@qq.com">576378368@qq.com</a><br>
+    <a href="https://github.com/a576378368/quant-mentor">GitHub 仓库</a> | 
+    <a href="https://a576378368.github.io/quant-mentor/">在线阅读</a>
+  </p>
+</div>
+
+---
+
+**记住：游资是一门职业，需要系统学习、长期实践和不断总结。**
