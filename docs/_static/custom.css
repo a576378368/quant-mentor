@@ -14,10 +14,24 @@
 /* 链接样式 */
 a {
     color: #0366d6;
+    font-weight: 500;
 }
 
 a:hover {
     color: #0056b3;
+    text-decoration: underline;
+}
+
+/* 侧边栏链接样式 - 深色增强对比度 */
+.bd-sidebar a {
+    color: #212529;
+    font-weight: 500;
+}
+
+.bd-sidebar a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: #e9ecef;
 }
 
 /* 代码块样式 */
@@ -49,10 +63,11 @@ h3 {
 
 /* 引用块 */
 blockquote {
-    border-left: 4px solid #dfe1e5;
+    border-left: 4px solid #0366d6;
     padding: 0.5rem 1rem;
     margin: 1rem 0;
-    background-color: #f6f8fa;
+    background-color: #f0f7ff;
+    border-radius: 4px;
 }
 
 /* 表格样式 */
@@ -93,10 +108,51 @@ th {
     background-color: #ffeef0;
 }
 
+/* 目录/侧边栏链接样式 - 深色增强对比度 */
+.bd-toc a {
+    color: #212529 !important;
+    font-weight: 500;
+}
+
+.bd-toc a:hover {
+    color: #0056b3 !important;
+    background-color: #e9ecef;
+}
+
 /* 响应式 */
 @media (max-width: 768px) {
     .bd-sidebar {
         border-right: none;
         border-bottom: 1px solid #dee2e6;
     }
+}
+
+/* 提升目录链接对比度 */
+.bd-sidebar .nav-link {
+    color: #212529;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+}
+
+.bd-sidebar .nav-link:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.bd-sidebar .nav-link.active {
+    color: #0366d6;
+    font-weight: 600;
+    border-left: 3px solid #0366d6;
+    padding-left: 0.75rem;
+}
+
+/* 主目录链接 */
+.bd-sidebar .nav .nav-link {
+    color: #212529;
+}
+
+.bd-sidebar .nav .nav-link:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
 }
