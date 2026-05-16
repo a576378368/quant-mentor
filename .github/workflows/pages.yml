@@ -1,0 +1,53 @@
+name: Build and Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install sphinx myst-parser sphinx-book-theme sphinx-copybutton sphinx-design
+
+      - name: Build HTML
+        run: |
+          echo "工作目录:"
+          ls -la
+          echo "开始构建..."
+          bash build-html.sh build || { echo "构建失败"; exit 1; }
+          echo "构建完成，检查 docs 目录:"
+          ls -la docs/ || { echo "docs 目录不存在"; exit 1; }
+        working-directory: ./
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
