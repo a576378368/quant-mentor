@@ -1,0 +1,1615 @@
+
+<!DOCTYPE html>
+
+
+<html lang="zh-CN" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>第31章 向高手学习：站在巨人的肩膀上 &#8212; 游资心法：从入门到大师的进阶之路</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=4f4deac9" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="../_static/documentation_options.js?v=509a98c5"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'part10-学习路径篇/31-向高手学习';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <script src="../_static/custom.js?v=d1efd68e"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="part11-常见误区篇" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html" />
+    <link rel="prev" title="第30章 学习方法：理论结合实践" href="30-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="zh-CN"/>
+  <meta name="docsearch:version" content="1.0" />
+    <meta name="docbuild:last-update" content="2026-05-16 22:07:48"/>
+  
+    
+    <script src="../_static/searchtools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">跳转至主要内容</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>回到顶部</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="版本警告"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="网页导航">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">游资心法：从入门到大师的进阶之路</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">
+    part1-认知升级篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part2-择时系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part3-选股系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part4-买入系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">
+    part5-仓位管理系统
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part6-卖出系统篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part7-风控系统篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">
+    part8-实战技巧篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">
+    part9-游资代表篇
+  </a>
+</li>
+
+
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="index.html">
+    part10-学习路径篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">
+    part11-常见误区篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">
+    part12-实战案例篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">
+    part13-成功要素篇
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">
+    part14-总结篇
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/stock" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="当前页面">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">
+    part1-认知升级篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part2-择时系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part3-选股系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part4-买入系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">
+    part5-仓位管理系统
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part6-卖出系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">
+    part7-风控系统篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">
+    part8-实战技巧篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">
+    part9-游资代表篇
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    part10-学习路径篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">
+    part11-常见误区篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">
+    part12-实战案例篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">
+    part13-成功要素篇
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">
+    part14-总结篇
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/stock" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">游资心法：从入门到大师的进阶之路</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/a576378368/stock" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">搜索</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    游资心法：从入门到大师的进阶之路
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/index.html">part1-认知升级篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/01-%E5%B8%82%E5%9C%BA%E6%9C%AC%E8%B4%A8.html">第1章 市场本质：财富再分配的博弈场（扩展内容）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/02-%E6%B8%B8%E8%B5%84%E4%B9%8B%E9%81%93.html">第2章 游资之道：职业投机的艺术（扩展内容）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/03-%E5%BF%83%E6%B3%95%E4%B8%8E%E4%BF%A1%E5%BF%B5.html">第3章 心法与信念：成功的基石（扩展内容）</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part2-择时系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/04-%E5%A4%A7%E7%9B%98%E7%8E%AF%E5%A2%83%E5%88%A4%E6%96%AD.html">第4章 大盘环境判断：强势、弱势、平衡</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/05-%E6%83%85%E7%BB%AA%E5%91%A8%E6%9C%9F%E7%90%86%E8%AE%BA.html">第5章 情绪周期理论：冰点、高潮与市场轮回</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/06-%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%9A%84%E6%93%8D%E4%BD%9C%E7%AD%96%E7%95%A5.html">第6章 不同环境下的操作策略</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part3-选股系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/07-%E6%96%B0%E9%A2%98%E6%9D%90%E8%AF%86%E5%88%AB.html">第7章 新题材识别：发现机会的起点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/08-%E9%BE%99%E5%A4%B4%E8%82%A1%E7%AD%9B%E9%80%89.html">第8章 龙头股筛选：市场精神领袖</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/09-%E9%80%89%E8%82%A1%E5%85%AC%E5%BC%8F.html">第9章 选股公式：多点共振</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part4-买入系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/10-%E4%B9%B0%E5%85%A5%E6%9D%A1%E4%BB%B6.html">第10章 买入条件：确认的信号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/11-%E4%B9%B0%E5%85%A5%E6%97%B6%E6%9C%BA.html">第11章 买入时机：最佳买点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/12-%E4%B9%B0%E5%85%A5%E7%BA%AA%E5%BE%8B.html">第12章 买入纪律：严格执行</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/index.html">part5-仓位管理系统</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/13-%E4%BB%93%E4%BD%8D%E8%AE%A1%E7%AE%97.html">第13章 仓位计算：科学的分配艺术</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/14-%E4%BB%93%E4%BD%8D%E5%88%86%E7%BA%A7.html">第14章 仓位分级：科学的五级体系</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/15-%E4%BB%93%E4%BD%8D%E8%B0%83%E6%95%B4.html">第15章 仓位调整：动态优化</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part6-卖出系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/16-%E5%8D%96%E5%87%BA%E4%BF%A1%E5%8F%B7.html">第16章 卖出信号：龙头断板、板块退潮</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/17-%E5%8D%96%E5%87%BA%E7%BA%AA%E5%BE%8B.html">第17章 卖出纪律：不贪不恋</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/18-%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F.html">第18章 止盈止损：保护本金</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/index.html">part7-风控系统篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/19-%E9%A3%8E%E6%8E%A7%E6%8C%87%E6%A0%87.html">第19章 风控指标：单日3%、最大回撤10%的科学体系</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/20-%E9%A3%8E%E6%8E%A7%E6%8E%AA%E6%96%BD.html">第20章 风控措施：触发即执行</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/21-%E9%A3%8E%E9%99%A9%E7%AE%A1%E7%90%86.html">第21章 风险管理：生存第一的完整体系</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/index.html">part8-实战技巧篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/22-%E9%BE%99%E5%A4%B4%E6%89%93%E6%9D%BF.html">第22章 龙头打板：强势买入</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/23-%E4%BD%8E%E5%90%B8%E5%9B%9E%E5%B0%81.html">第23章 低吸回封：弱势买点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/24-T%2B0%E6%93%8D%E4%BD%9C.html">第24章 T+0操作：日内交易增强收益</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/index.html">part9-游资代表篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/25-%E7%82%92%E8%82%A1%E5%85%BB%E5%AE%B6.html">第25章 炒股养家：情绪周期理论的开创者</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/26-%E8%B5%B5%E8%80%81%E5%93%A5.html">第26章 赵老哥：龙头战法大师</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/27-%E7%AB%A0%E7%9B%9F%E4%B8%BB.html">第27章 章盟主：趋势战法专家</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/28-%E5%BE%90%E7%BF%94.html">第28章 徐翔：涨停板敢死队总舵主</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">part10-学习路径篇</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="29-%E5%AD%A6%E4%B9%A0%E9%98%B6%E6%AE%B5.html">第29章 学习阶段：入门→进阶→精通→大师</a></li>
+<li class="toctree-l2"><a class="reference internal" href="30-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95.html">第30章 学习方法：理论结合实践</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">第31章 向高手学习：站在巨人的肩膀上</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html">part11-常见误区篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/32-%E8%BF%BD%E9%AB%98%E6%9D%80%E8%B7%8C.html">第32章 误区一：追高杀跌</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/33-%E9%A2%91%E7%B9%81%E6%93%8D%E4%BD%9C.html">第33章 误区二：频繁操作</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/34-%E4%B8%8D%E8%AE%BE%E6%AD%A2%E6%8D%9F.html">第34章 误区三：不设止损</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/35-%E7%9B%B2%E7%9B%AE%E8%87%AA%E4%BF%A1.html">第35章 误区四：盲目自信</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/index.html">part12-实战案例篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/36-%E7%A7%91%E6%8A%80%E9%BE%99%E5%A4%B4%E8%82%A1.html">第36章 案例一：科技龙头股（强势环境）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/37-%E8%B6%85%E8%B7%8C%E5%8F%8D%E5%BC%B9.html">第37章 案例二：超跌反弹（弱势环境）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/38-%E6%83%85%E7%BB%AA%E5%86%B0%E7%82%B9.html">第38章 案例三：情绪冰点（退潮后）</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/index.html">part13-成功要素篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/39-%E4%BF%A1%E5%BF%B5.html">第39章 信念：成功的基石</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/40-%E7%BA%AA%E5%BE%8B.html">第40章 纪律：盈利的保障</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/41-%E8%80%90%E5%BF%83.html">第41章 耐心：等待的艺术</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/42-%E5%AD%A6%E4%B9%A0.html">第42章 学习：持续进步</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/index.html">part14-总结篇</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/43-%E6%A0%B8%E5%BF%83%E6%80%9D%E6%83%B3.html">第43章 核心思想</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/44-%E6%93%8D%E4%BD%9C%E5%8F%A3%E8%AF%80.html">第44章 操作口诀</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part14-%E6%80%BB%E7%BB%93%E7%AF%87/45-%E6%88%90%E5%8A%9F%E4%B9%8B%E8%B7%AF.html">第45章 成功之路</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/a576378368/stock" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="源码库"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/a576378368/stock/edit/main/sphinx/part10-学习路径篇/31-向高手学习.rst" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/a576378368/stock/issues/new?title=Issue%20on%20page%20%2Fpart10-学习路径篇/31-向高手学习.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="创建议题"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="下载此页面">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/part10-学习路径篇/31-向高手学习.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="下载源文件"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="列印成 PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="全屏模式"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>第31章 向高手学习：站在巨人的肩膀上</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> 目录 </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">31.0 前言</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">31.1 向高手学习的重要性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">31.1.1 为什么向高手学习如此重要</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">31.1.2 向高手学习的三个核心原则</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">31.1.3 向高手学习的四个步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">31.2 选择高手</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">31.2.1 主要游资高手介绍</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">31.2.2 选择高手的标准</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">31.2.3 学习高手的方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">31.3 学习心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">31.3.1 炒股养家的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">31.3.2 赵老哥的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">31.3.3 章盟主的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">31.3.4 徐翔的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">31.4 模仿操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">31.4.1 模仿操作的步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">31.4.2 模仿操作的检查</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">31.4.3 模仿操作的注意事项</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">31.5 优化创新</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">31.5.1 优化创新的步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">31.5.2 优化创新的检查</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">31.5.3 优化创新的方向</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">31.6 小结</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>第31章 向高手学习：站在巨人的肩膀上<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>31.0 前言<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>牛顿曾说：”如果我看得更远，那是因为我站在巨人的肩膀上。”这句话同样适用于游资的学习。在游资的道路上，前人已经积累了大量的经验和教训，形成了丰富的理论体系。向高手学习，就是站在这些巨人的肩膀上，可以让我们看得更远、进步更快。</p>
+<p>赵老哥曾说：”跟着合力，有吃有喝。”这里的”合力”指的就是市场的力量，也就是赚钱的机会。但如何发现合力、跟随合力？这就需要向高手学习，学习他们是如何观察市场、发现机会、把握机会的。</p>
+<p>许多初学者在市场中独自摸索，走了很多弯路，亏损了很多资金，却始终无法入门。原因是他们不知道有更好的方法存在，或者知道但不愿意学习。向高手学习，可以让我们少走弯路、少亏资金、更快进步。</p>
+<p>当然，向高手学习不是简单地复制粘贴。每个交易者都有自己的性格、风格、能力圈，需要根据自己的特点，选择适合自己的学习方法，最终形成自己的交易系统。</p>
+<p>本章将详细介绍向高手学习的原则、步骤、方法，以及如何将高手的经验转化为自己的能力。</p>
+</section>
+<section id="id3">
+<h2>31.1 向高手学习的重要性<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+</section>
+<section id="id4">
+<h2>31.1.1 为什么向高手学习如此重要<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>在任何一个领域，向高手学习都是快速进步的重要途径。在交易领域，向高手学习尤为重要，原因如下：</p>
+<p><strong>第一，交易是一个高度专业化的领域</strong>
+交易看似简单，开户、资金、买卖，三步就能完成。但要在这个市场中盈利，需要掌握大量的知识、技能、心态。这些东西不是天生就有的，而是需要通过学习获得。向高手学习，可以快速掌握这些知识、技能、心态。</p>
+<p><strong>第二，高手已经经历了我们正在经历的事情</strong>
+每一个高手都曾经是新手，都曾经亏损过、迷茫过、绝望过。他们走过的路，我们正在走。向他们学习，可以借鉴他们的经验，避免他们犯过的错误，少走很多弯路。</p>
+<p><strong>第三，高手的成功证明了他们的方法有效</strong>
+高手之所以成为高手，是因为他们的方法经过了市场的检验，证明是有效的。向高手学习，就是学习这些经过验证的有效方法，比自己摸索要高效得多。</p>
+<p><strong>第四，站在巨人的肩膀上可以看得更远</strong>
+牛顿说过：”如果我看得更远，那是因为我站在巨人的肩膀上。”交易领域的巨人就是那些成功的高手。向他们学习，可以让我们站在他们的肩膀上，看得更远、进步更快。</p>
+</section>
+<section id="id5">
+<h2>31.1.2 向高手学习的三个核心原则<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>向高手学习需要遵循三个核心原则：</p>
+<p><strong>原则一：学习精髓，不照搬照抄</strong>
+每个高手的方法都有其精髓，但也有其适用的条件和范围。学习高手不是简单地复制他们的每一笔交易，而是要学习他们的核心思想和原则，并结合自己的实际情况灵活运用。</p>
+<p>例如，炒股养家的”永不止损，永不止盈”不是让我们真的不止损不止盈，而是告诉我们要有自己的交易逻辑，不要被短期的波动所影响。学习时要知道其背后的原理，而不是机械地模仿。</p>
+<p><strong>原则二：结合实际，灵活运用</strong>
+学习高手的方法必须结合自己的实际情况。每个人的性格、风险偏好、能力圈都不同，适合别人的方法不一定适合自己。</p>
+<p>例如，龙头战法需要较高的选股能力和心理承受能力，如果自己的性格不适合做激进的操作，就不应该盲目模仿。应该根据自己的特点，选择适合自己的方法。</p>
+<p><strong>原则三：持续优化，形成自己的风格</strong>
+学习高手不是终点，而是起点。在学习高手的基础上，需要通过实践验证、持续优化，最终形成自己的交易风格。</p>
+<p>向高手学习可以分为三个阶段：模仿、创新、超越。模仿是学习的初级阶段，创新是在模仿基础上的改进，超越是最终的目标。</p>
+</section>
+<section id="id6">
+<h2>31.1.3 向高手学习的四个步骤<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>向高手学习可以分为四个步骤：</p>
+<p><strong>步骤一：选择高手</strong>
+选择适合自己的高手是学习的第一步。不同的高手有不同的风格和特点，需要根据自己的情况进行选择。</p>
+<p><strong>步骤二：学习心法</strong>
+学习高手的心法，理解他们的核心理念和原则。心法是指导行动的根本，只有理解了心法，才能正确地运用方法。</p>
+<p><strong>步骤三：模仿操作</strong>
+通过模拟或小仓实盘模仿高手的操作，验证他们的方法是否适合自己。</p>
+<p><strong>步骤四：优化创新</strong>
+在模仿的基础上，根据自己的实际情况进行优化和创新，最终形成自己的交易风格。</p>
+</section>
+<section id="id7">
+<h2>31.2 选择高手<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+</section>
+<section id="id8">
+<h2>31.2.1 主要游资高手介绍<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>在A股市场，涌现出了许多成功的游资高手。他们的成长经历和交易方法各有特点，值得我们学习。以下是主要的游资高手及其特点：</p>
+<p><strong>炒股养家</strong></p>
+<p>炒股养家是游资界的标志性人物，他的情绪周期理论影响了一代交易者。他的核心理念包括：</p>
+<ul class="simple">
+<li><p>“市场是财富再分配场所，本质是人性博弈”</p></li>
+<li><p>“高手买入龙头，超级高手卖出龙头”</p></li>
+<li><p>“别人贪婪时我更贪婪，别人恐慌时我更恐慌”</p></li>
+<li><p>“敢于大盘低位空仓，敢于大盘高位满仓”</p></li>
+<li><p>“永不止损，永不止盈”</p></li>
+<li><p>“得散户心者得天下”</p></li>
+</ul>
+<p>炒股养家擅长：
+- 情绪周期的判断和运用
+- 龙头股的操作
+- 题材的挖掘和跟进</p>
+<p>他的特点是：
+- 理论体系完整，对市场有深刻的理解
+- 操作稳健，不追求暴利
+- 心态平和，不为短期波动所动</p>
+<p><strong>赵老哥</strong></p>
+<p>赵老哥是游资界的另一位标志性人物，以龙头战法著称。他的核心理念包括：</p>
+<ul class="simple">
+<li><p>“二板定龙头，一板能看出来个毛”</p></li>
+<li><p>“有新题材，坚决抛弃旧题材”</p></li>
+<li><p>“龙头战法的核心：发现龙头、确认龙头、持有龙头”</p></li>
+<li><p>“大龙头都是多点共振的结果”</p></li>
+<li><p>“模式不同的人，尽量少交流”</p></li>
+<li><p>“只做龙头，只做主升，只做惯性”</p></li>
+<li><p>“对龙头一定要有一颗尊重的心”</p></li>
+<li><p>“错误的交易，第二个集合割，效果最好”</p></li>
+</ul>
+<p>赵老哥擅长：
+- 龙头股的发现和确认
+- 二板定龙头的操作
+- 题材的切换和跟进</p>
+<p>他的特点是：
+- 操作犀利，敢于重仓
+- 对龙头有敏锐的直觉
+- 纪律性强，止损果断</p>
+<p><strong>章盟主</strong></p>
+<p>章盟主是游资界的资深人物，以趋势战法著称。他的核心理念包括：</p>
+<ul class="simple">
+<li><p>“趋势启动、突破确认、回踩买点、趋势持股”</p></li>
+<li><p>“顺势而为，不逆势而动”</p></li>
+<li><p>“只做确定性的机会”</p></li>
+</ul>
+<p>章盟主擅长：
+- 趋势行情的把握
+- 突破确认的买入
+- 回踩买点的把握</p>
+<p>他的特点是：
+- 操作稳健，注重趋势
+- 喜欢做中线趋势行情
+- 仓位管理合理</p>
+<p><strong>Asking</strong></p>
+<p>Asking是游资界的老前辈，他的很多心得至今仍然有重要的参考价值。他的核心理念包括：</p>
+<ul class="simple">
+<li><p>“时间的积累比金额更重要”</p></li>
+<li><p>“要像职业交易者一样交易”</p></li>
+<li><p>“稳定盈利才是真正的成功”</p></li>
+<li><p>“不追求暴利，追求稳定”</p></li>
+</ul>
+<p>Asking擅长：
+- 稳定的盈利模式
+- 风险控制
+- 心态管理</p>
+<p>他的特点是：
+- 操作稳健，不追求短期暴利
+- 注重风险控制
+- 心态管理能力强</p>
+<p><strong>徐翔</strong></p>
+<p>徐翔是游资界的传奇人物，以涨停板战法和多点共振著称。他的核心理念包括：</p>
+<ul class="simple">
+<li><p>“脚踏实地，持续学习”</p></li>
+<li><p>“涨停板战法的核心是多点共振”</p></li>
+<li><p>“精准择时，严控风险”</p></li>
+</ul>
+<p>徐翔擅长：
+- 涨停板战法
+- 多点共振的把握
+- 精准的买卖时机</p>
+<p>他的特点是：
+- 操作精准，时机把握好
+- 注重风险控制
+- 持续学习和进化</p>
+</section>
+<section id="id9">
+<h2>31.2.2 选择高手的标准<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>选择高手需要根据自己的情况进行选择。以下是选择高手的标准：</p>
+<p><strong>标准一：符合自己的性格</strong></p>
+<p>每个人的性格不同，适合的方法也不同。性格激进的人适合学习赵老哥的龙头战法，性格稳健的人适合学习章盟主的趋势战法。</p>
+<p>选择高手时，要考虑：
+- 自己的风险偏好是高还是低
+- 自己喜欢激进还是稳健的操作
+- 自己能承受多大的回撤</p>
+<p><strong>标准二：理念一致</strong></p>
+<p>选择的高手，其交易理念应该与自己的理念一致。如果理念不一致，学习起来会很难受，也很难坚持下去。</p>
+<p>选择高手时，要考虑：
+- 自己是否认同该高手的交易理念
+- 该高手的理念是否与自己的价值观一致
+- 该高手的方法是否适合自己的风格</p>
+<p><strong>标准三：成绩稳定</strong></p>
+<p>选择的高手应该有稳定的长期业绩，而不是短期的暴利。短期暴利可能是因为运气，而长期稳定盈利才是能力的体现。</p>
+<p>选择高手时，要考虑：
+- 该高手是否有5年以上的稳定业绩
+- 该高手的最大回撤是多少
+- 该高手的盈利模式是否可持续</p>
+</section>
+<section id="id10">
+<h2>31.2.3 学习高手的方法<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>选择好高手后，需要采用正确的方法学习。以下是学习高手的方法：</p>
+<p><strong>方法一：阅读高手的心得</strong></p>
+<p>阅读高手的心得是学习的第一步。通过阅读，可以了解高手的交易理念、方法、原则。</p>
+<p>阅读高手心得的要点：
+- 仔细阅读每句话，理解其含义
+- 思考每句话背后的原理
+- 想象如何在实战中运用</p>
+<p><strong>方法二：分析高手的案例</strong></p>
+<p>分析高手的成功案例是学习的第二步。通过案例分析，可以了解高手是如何做出交易决策的。</p>
+<p>分析高手案例的要点：
+- 分析买入的理由是什么
+- 分析卖出的理由是什么
+- 分析持仓期间的心态变化
+- 总结成功的关键因素</p>
+<p><strong>方法三：模仿高手的操作</strong></p>
+<p>模仿高手的操作是学习的第三步。通过模仿，可以验证高手的方法是否适合自己，同时加深对高手方法的理解。</p>
+<p>模仿高手操作的要点：
+- 模拟高手的交易决策过程
+- 记录自己的模仿交易
+- 分析模仿交易的结果
+- 总结模仿交易的问题</p>
+</section>
+<section id="id11">
+<h2>31.3 学习心法<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+</section>
+<section id="id12">
+<h2>31.3.1 炒股养家的心法<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<p>炒股养家的心法是游资心法的核心，其6句心法蕴含着深刻的交易哲学。</p>
+<p><strong>心法一：基于情绪揣摩</strong></p>
+<p>“基于情绪揣摩”是炒股养家心法的核心。炒股的本质是揣摩他人的情绪，在他人贪婪时贪婪，在他人恐惧时恐惧。</p>
+<p>这句话的含义是：
+- 交易决策的基础是对市场情绪的判断
+- 通过观察市场情绪来决定买入卖出
+- 情绪决定短期价格波动</p>
+<p>这句话的应用是：
+- 观察市场情绪的变化，判断市场的顶部和底部
+- 在市场贪婪时谨慎，在市场恐惧时贪婪
+- 根据情绪变化调整仓位和策略</p>
+<p><strong>心法二：高手买入龙头，超级高手卖出龙头</strong></p>
+<p>这句话揭示了龙头股操作的精髓。买入龙头是顺势而为，卖出龙头是见好就收。</p>
+<p>这句话的含义是：
+- 龙头股是市场最强的主力品种
+- 买入龙头是跟随主力的行为
+- 卖出龙头是在主力撤退前先行撤离</p>
+<p>这句话的应用是：
+- 只做龙头股，不做跟风股
+- 在龙头股启动时买入
+- 在龙头股高潮时卖出</p>
+<p><strong>心法三：别人贪婪时我更贪婪，别人恐慌时我更恐慌</strong></p>
+<p>这句话是反人性操作的精髓。当大众贪婪时，市场可能已经见顶；当大众恐慌时，市场可能已经见底。</p>
+<p>这句话的含义是：
+- 与大众反向操作
+- 在市场顶部时更加谨慎
+- 在市场底部时更加积极</p>
+<p>这句话的应用是：
+- 在市场高潮时减仓
+- 在市场冰点时加仓
+- 不随大流，有自己的判断</p>
+<p><strong>心法四：敢于大盘低位空仓，敢于大盘高位满仓</strong></p>
+<p>这句话是仓位管理的精髓。低位空仓是保存实力，高位满仓是把握机会。</p>
+<p>这句话的含义是：
+- 根据大盘位置调整仓位
+- 大盘低位时轻仓或空仓
+- 大盘高位时重仓</p>
+<p>这句话的应用是：
+- 判断大盘的顶部和底部
+- 在大盘低位时保留资金
+- 在大盘高位时积极进攻</p>
+<p><strong>心法五：永不止损，永不止盈</strong></p>
+<p>这句话是交易策略的精髓。止损和止盈都是主观的判断，会影响客观的交易。</p>
+<p>这句话的含义是：
+- 不预先设定止损止盈位
+- 让利润奔跑，让亏损奔跑
+- 根据市场走势决定卖出</p>
+<p>这句话的应用是：
+- 不设固定的止损位
+- 让利润奔跑直到趋势结束
+- 不贪心，不恋战</p>
+<p><strong>心法六：得散户心者得天下</strong></p>
+<p>这句话是交易哲学的精髓。散户是市场的主力资金来源，得散户心就是得市场主力。</p>
+<p>这句话的含义是：
+- 理解散户的心理和行为
+- 跟随散户的趋势
+- 在散户恐慌时买入，在散户贪婪时卖出</p>
+<p>这句话的应用是：
+- 观察散户的行为和情绪
+- 站在散户的对立面
+- 成为少数赚钱的人</p>
+</section>
+<section id="id13">
+<h2>31.3.2 赵老哥的心法<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>赵老哥的心法是龙头战法的精髓，其12条心法涵盖了龙头股操作的各个方面。</p>
+<p><strong>心法一：二板定龙头，一板能看出来个毛</strong></p>
+<p>这句话是龙头股筛选的核心。二板是确认龙头的关键，一板还看不出真正的龙头。</p>
+<p>这句话的含义是：
+- 第一板涨停可能是偶然
+- 第二板涨停才能确认龙头地位
+- 真正的龙头需要经过市场检验</p>
+<p>这句话的应用是：
+- 只做二板及以上的股票
+- 一板不接力，等二板确认
+- 二板是龙头的起点</p>
+<p><strong>心法二：有新题材，坚决抛弃旧题材</strong></p>
+<p>这句话是题材切换的核心。新题材出现时，市场资金会转移到新题材。</p>
+<p>这句话的含义是：
+- 题材有轮动性
+- 新题材会取代旧题材
+- 及时切换到新题材</p>
+<p>这句话的应用是：
+- 关注新题材的出现
+- 及时从旧题材中撤退
+- 拥抱新题材，抛弃旧题材</p>
+<p><strong>心法三：龙头战法的核心</strong></p>
+<p>“龙头战法的核心：发现龙头、确认龙头、持有龙头、切换龙头”是赵老哥对龙头战法的总结。</p>
+<p>这句话的含义是：
+- 龙头战法有四个关键环节
+- 每个环节都很重要
+- 需要持续跟踪龙头</p>
+<p>这句话的应用是：
+- 第一时间发现龙头
+- 通过二板确认龙头
+- 持有龙头直到切换
+- 发现新龙头时果断切换</p>
+<p><strong>心法四：大龙头都是多点共振的结果</strong></p>
+<p>这句话是龙头股形成的原因。多点共振是指题材、资金、技术等多方面因素的共振。</p>
+<p>这句话的含义是：
+- 大龙头需要多方面因素配合
+- 单点因素不足以形成大龙头
+- 多点共振是大龙头的基础</p>
+<p>这句话的应用是：
+- 选择多方面共振的股票
+- 判断共振的强度和持续性
+- 关注共振的变化</p>
+<p><strong>心法五：模式不同的人，尽量少交流</strong></p>
+<p>这句话是专注和聚焦的核心。不同的交易模式需要不同的思维方式，交流可能会影响自己的判断。</p>
+<p>这句话的含义是：
+- 专注于自己的交易模式
+- 不被其他模式干扰
+- 减少无效的交流</p>
+<p>这句话的应用是：
+- 找到适合自己的模式
+- 专注于自己的模式
+- 不频繁换模式</p>
+<p><strong>心法六：开盘不接力</strong></p>
+<p>这句话是开盘交易的风险提示。开盘是高风险时段，不适合追高。</p>
+<p>这句话的含义是：
+- 开盘价格波动大
+- 开盘追高容易被套
+- 等待盘中确认机会</p>
+<p>这句话的应用是：
+- 不在开盘时追高
+- 等待盘中稳定后再操作
+- 看准机会再出手</p>
+<p><strong>心法七：只做龙头，只做主升，只做惯性</strong></p>
+<p>这句话是龙头战法的核心原则。只做最强的那一个。</p>
+<p>这句话的含义是：
+- 只做龙头股
+- 只做主升段
+- 只做趋势延续的行情</p>
+<p>这句话的应用是：
+- 放弃跟风股
+- 在主升段持有
+- 在趋势结束时卖出</p>
+<p><strong>心法八：跟风B，不看，不买，不研究</strong></p>
+<p>这句话是专注龙头的延伸。跟风股没有价值，不需要关注。</p>
+<p>这句话的含义是：
+- 跟风股跟随龙头波动
+- 跟风股没有独立性
+- 不值得浪费时间</p>
+<p>这句话的应用是：
+- 只关注龙头股
+- 不看跟风股
+- 不买跟风股</p>
+<p><strong>心法九：交易一定要纯粹</strong></p>
+<p>这句话是交易心态的核心。交易时不应该有杂念，应该纯粹地执行计划。</p>
+<p>这句话的含义是：
+- 交易时心态要纯净
+- 不应该有恐惧和贪婪
+- 纯粹地执行交易计划</p>
+<p>这句话的应用是：
+- 制定交易计划后执行
+- 不临时改变计划
+- 保持心态平和</p>
+<p><strong>心法十：选股，必须新题材龙头</strong></p>
+<p>这句话是选股的核心原则。只选新题材的龙头。</p>
+<p>这句话的含义是：
+- 新题材才有大机会
+- 龙头才有价值
+- 旧题材不值得做</p>
+<p>这句话的应用是：
+- 只选新题材的股票
+- 只做新题材的龙头
+- 旧题材不关注</p>
+<p><strong>心法十一：对龙头一定要有一颗尊重的心</strong></p>
+<p>这句话是敬畏市场的心态。龙头是市场最强的那一个，要尊重它。</p>
+<p>这句话的含义是：
+- 龙头是市场精选的结果
+- 对龙头要敬畏
+- 不要轻易背叛龙头</p>
+<p>这句话的应用是：
+- 买入龙头后要持有
+- 不要轻易卖飞龙头
+- 对龙头保持敬畏</p>
+<p><strong>心法十二：错误的交易，第二个集合割</strong></p>
+<p>这句话是止损的核心。错误交易要在第二个集合竞价时止损。</p>
+<p>这句话的含义是：
+- 错误交易要立即止损
+- 不要等到收盘
+- 第二个集合竞价是最后的止损机会</p>
+<p>这句话的应用是：
+- 发现错误交易立即止损
+- 不抱有侥幸心理
+- 在第二个集合竞价时卖出</p>
+</section>
+<section id="id14">
+<h2>31.3.3 章盟主的心法<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<p>章盟主的心法以趋势战法为核心，强调顺势而为。</p>
+<p><strong>心法一：趋势启动</strong></p>
+<p>“趋势启动”是章盟主战法的第一步。在趋势启动时买入，是最安全的买点。</p>
+<p>这句话的含义是：
+- 趋势启动是行情的起点
+- 启动点是最好的买入点
+- 确认趋势启动是关键</p>
+<p>这句话的应用是：
+- 识别趋势启动的信号
+- 在启动点买入
+- 不要在趋势确认后追高</p>
+<p><strong>心法二：突破确认</strong></p>
+<p>“突破确认”是章盟主战法的第二步。在重要位置突破时买入，确认趋势。</p>
+<p>这句话的含义是：
+- 突破是趋势确认的信号
+- 突破后行情会加速
+- 突破是最好的买入时机</p>
+<p>这句话的应用是：
+- 识别重要位置
+- 在突破时买入
+- 突破确认后加仓</p>
+<p><strong>心法三：回踩买点</strong></p>
+<p>“回踩买点”是章盟主战法的补充。在趋势中的回踩是买入机会。</p>
+<p>这句话的含义是：
+- 趋势不会一直涨，会有回调
+- 回踩是买入的机会
+- 回踩要见好就收</p>
+<p>这句话的应用是：
+- 在上升趋势中等待回踩
+- 回踩到支撑位时买入
+- 不贪心，回踩后及时卖出</p>
+<p><strong>心法四：趋势持股</strong></p>
+<p>“趋势持股”是章盟主战法的核心。一旦确认趋势，就要持有到趋势结束。</p>
+<p>这句话的含义是：
+- 趋势不会轻易改变
+- 持有到趋势结束才能赚大钱
+- 不要被短期波动影响</p>
+<p>这句话的应用是：
+- 确认趋势后持有
+- 不要频繁交易
+- 在趋势结束前不要卖出</p>
+</section>
+<section id="id15">
+<h2>31.3.4 徐翔的心法<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
+<p>徐翔的心法以涨停板战法和多点共振为核心，强调精准择时和严格风控。</p>
+<p><strong>心法一：脚踏实地</strong></p>
+<p>“脚踏实地”是徐翔心法的核心。交易需要一步一脚印，不能投机取巧。</p>
+<p>这句话的含义是：
+- 成功需要积累
+- 不能期望一夜暴富
+- 每一步都要走扎实</p>
+<p>这句话的应用是：
+- 打好基础，不急于求成
+- 循序渐进地学习
+- 持续积累，不投机取巧</p>
+<p><strong>心法二：持续学习</strong></p>
+<p>“持续学习”是徐翔心法的特点。市场在变化，需要持续学习才能跟上。</p>
+<p>这句话的含义是：
+- 学习是一生的事情
+- 市场在变化，需要持续学习
+- 不断进化才能生存</p>
+<p>这句话的应用是：
+- 每天坚持学习
+- 关注市场变化
+- 不断优化自己的方法</p>
+<p><strong>心法三：涨停板战法</strong></p>
+<p>“涨停板战法”是徐翔的核心战法。通过抓涨停板获取超额收益。</p>
+<p>这句话的含义是：
+- 涨停板是主力行为的体现
+- 涨停板有继续上涨的动力
+- 涨停板战法需要精准的时机</p>
+<p>这句话的应用是：
+- 选择有涨停潜力的股票
+- 在涨停板前买入
+- 涨停板后持有</p>
+<p><strong>心法四：多点共振</strong></p>
+<p>“多点共振”是徐翔对龙头股形成原因的分析。多方面因素共振才能形成大龙头。</p>
+<p>这句话的含义是：
+- 大龙头需要多方面因素配合
+- 题材、资金、技术面都需要配合
+- 共振越强，行情越大</p>
+<p>这句话的应用是：
+- 选择多方面共振的股票
+- 判断共振的强度
+- 共振最强时买入</p>
+<p><strong>心法五：精准择时</strong></p>
+<p>“精准择时”是徐翔操作的核心特点。买卖时机精准，是盈利的关键。</p>
+<p>这句话的含义是：
+- 时机决定成败
+- 同样的股票，时机不同结果不同
+- 精准择时需要技术和经验</p>
+<p>这句话的应用是：
+- 等待最佳时机
+- 时机不到不出手
+- 时机到了果断出手</p>
+<p><strong>心法六：严格风控</strong></p>
+<p>“严格风控”是徐翔生存的基础。没有风控，即使赚再多也会亏回去。</p>
+<p>这句话的含义是：
+- 风控比盈利更重要
+- 生存是第一要务
+- 严格止损是风控的核心</p>
+<p>这句话的应用是：
+- 每笔交易都要设止损
+- 触发止损立即执行
+- 不侥幸，不扛单</p>
+</section>
+<section id="id16">
+<h2>31.4 模仿操作<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+</section>
+<section id="id17">
+<h2>31.4.1 模仿操作的步骤<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<p>模仿操作是学习高手方法的重要步骤。通过模仿，可以验证高手的方法是否适合自己，同时加深对高手方法的理解。</p>
+<p><strong>步骤一：学习思路</strong></p>
+<p>学习高手的操作思路是关键。不是简单地模仿买卖，而是要理解为什么要这样操作。</p>
+<p>学习内容包括：
+- 高手为什么要买入这只股票
+- 高手为什么要在这个时机买入
+- 高手如何判断卖出时机
+- 高手如何管理仓位</p>
+<p><strong>步骤二：模拟模仿</strong></p>
+<p>在模拟交易中模仿高手的操作。这是检验学习成果的第一步。</p>
+<p>模拟内容包括：
+- 选择与高手类似的股票
+- 按照高手的思路进行操作
+- 记录模仿交易的过程和结果</p>
+<p><strong>步骤三：小仓模仿</strong></p>
+<p>在小额实盘中模仿高手的操作。这是检验学习成果的第二步。</p>
+<p>实盘内容包括：
+- 用小仓位模仿高手的操作
+- 记录实盘模仿的过程和结果
+- 分析实盘模仿与模拟的差异</p>
+</section>
+<section id="id18">
+<h2>31.4.2 模仿操作的检查<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<p>模仿操作需要进行定期检查，确保学习效果。</p>
+<p><strong>模仿操作检查表</strong>：</p>
+<p><strong>模仿操作的总结</strong>：</p>
+<p>模仿操作结束后，需要进行总结：</p>
+<p>总结一：模仿结果分析
+- 模拟交易和实盘交易的结果
+- 与高手结果的对比
+- 差距的原因分析</p>
+<p>总结二：方法有效性分析
+- 高手的方法是否有效
+- 方法的优缺点是什么
+- 如何改进方法</p>
+<p>总结三：下一步计划
+- 是否继续模仿
+- 需要调整什么
+- 最终目标是什么</p>
+</section>
+<section id="id19">
+<h2>31.4.3 模仿操作的注意事项<a class="headerlink" href="#id19" title="Link to this heading">#</a></h2>
+<p>模仿操作需要注意以下事项：</p>
+<p><strong>注意事项一：不要盲目模仿</strong>
+模仿不是简单地复制每一笔交易，而是要学习背后的原理。要理解高手为什么要这样操作，而不是机械地模仿。</p>
+<p><strong>注意事项二：不要急于求成</strong>
+模仿需要时间，不要因为短期内没有效果就放弃。学习的初期往往是最难的，坚持下去才能看到效果。</p>
+<p><strong>注意事项三：不要失去自我</strong>
+学习的最终目标是形成自己的风格，而不是成为别人的复制品。在学习高手的基础上，要保留自己的优点，形成自己的特点。</p>
+</section>
+<section id="id20">
+<h2>31.5 优化创新<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+</section>
+<section id="id21">
+<h2>31.5.1 优化创新的步骤<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
+<p>学习高手的最终目标是形成自己的交易风格。这需要经过优化创新的过程。</p>
+<p><strong>步骤一：结合实际</strong></p>
+<p>结合自己的实际情况是优化创新的第一步。每个人的性格、风险偏好、能力圈都不同，需要根据自己的情况进行调整。</p>
+<p>结合内容包括：
+- 自己的性格特点是什么
+- 自己的风险偏好是什么
+- 自己的能力圈是什么</p>
+<p><strong>步骤二：优化方法</strong></p>
+<p>在高手方法的基础上进行优化，使其更适合自己。</p>
+<p>优化内容包括：
+- 交易系统的优化
+- 买入卖出策略的优化
+- 仓位管理的优化</p>
+<p><strong>步骤三：创新模式</strong></p>
+<p>在优化的基础上进行创新，形成自己的独特模式。</p>
+<p>创新内容包括：
+- 自己的交易理念
+- 自己的选股方法
+- 自己的操作风格</p>
+</section>
+<section id="id22">
+<h2>31.5.2 优化创新的检查<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<p>优化创新需要进行定期检查，确保创新方向正确。</p>
+<p><strong>优化创新检查表</strong>：</p>
+</section>
+<section id="id23">
+<h2>31.5.3 优化创新的方向<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<p>优化创新可以从以下方向进行：</p>
+<p><strong>方向一：简化方法</strong>
+将复杂的方法简化，使其更容易执行。复杂的方法往往难以坚持，简化后更容易执行。</p>
+<p><strong>方向二：强化优势</strong>
+强化自己的优势，形成自己的特长。每个人都有自己的优势，发挥优势比补短板更有效。</p>
+<p><strong>方向三：适应市场</strong>
+根据市场变化调整方法。市场在变化，去年的有效方法今年可能无效，需要持续调整。</p>
+</section>
+<section id="id24">
+<h2>31.6 小结<a class="headerlink" href="#id24" title="Link to this heading">#</a></h2>
+<p>向高手学习是快速进步的重要途径。选择适合自己的高手，学习他们的核心理念和方法，在实践中验证和优化，最终形成自己的交易风格。</p>
+<p><strong>向高手学习的四个步骤</strong>：
+1. 选择高手：选择适合自己的高手
+2. 学习心法：学习高手的核心理念和原则
+3. 模仿操作：模仿高手的操作方法
+4. 优化创新：优化创新形成自己的风格</p>
+<p><strong>向高手学习的三个原则</strong>：
+1. 学习精髓，不照搬照抄
+2. 结合实际，灵活运用
+3. 持续优化，形成自己的风格</p>
+<p><strong>主要游资高手</strong>：
+1. 炒股养家：情绪周期理论的创始人，擅长龙头战法
+2. 赵老哥：龙头战法的代表人物，擅长二板定龙头
+3. 章盟主：趋势战法的代表人物，擅长顺势而为
+4. Asking：资深游资，擅长稳定盈利
+5. 徐翔：涨停板战法的代表人物，擅长多点共振</p>
+<p>记住：向高手学习是快速进步的重要途径。站在巨人的肩膀上，可以看得更远。但不要简单地复制，要学习精髓，结合实际，持续优化，最终形成自己的交易风格。</p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="30-%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95.html"
+       title="上一页">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">上一页</p>
+        <p class="prev-next-title">第30章 学习方法：理论结合实践</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/index.html"
+       title="下一页">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">part11-常见误区篇</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 目录
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">31.0 前言</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">31.1 向高手学习的重要性</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">31.1.1 为什么向高手学习如此重要</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">31.1.2 向高手学习的三个核心原则</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">31.1.3 向高手学习的四个步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">31.2 选择高手</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">31.2.1 主要游资高手介绍</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">31.2.2 选择高手的标准</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">31.2.3 学习高手的方法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">31.3 学习心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">31.3.1 炒股养家的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">31.3.2 赵老哥的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">31.3.3 章盟主的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">31.3.4 徐翔的心法</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">31.4 模仿操作</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">31.4.1 模仿操作的步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">31.4.2 模仿操作的检查</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">31.4.3 模仿操作的注意事项</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">31.5 优化创新</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">31.5.1 优化创新的步骤</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">31.5.2 优化创新的检查</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">31.5.3 优化创新的方向</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">31.6 小结</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+作者： Stock Assistant
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026, Stock Assistant.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  最后更新于 2026-05-16 22:07:48.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, Stock Assistant.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7创建。
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
