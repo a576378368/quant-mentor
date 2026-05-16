@@ -1,68 +1,40 @@
 # -*- coding: utf-8 -*-
-"""
-游资心法教材 Sphinx 配置文件
-原始简洁版本
-"""
 
-import os
-import sys
-
-# 项目信息
 project = '游资心法：从入门到大师的进阶之路'
 copyright = '2026, Stock Assistant'
 author = 'Stock Assistant'
-
-# 版本
-version = '1.0'
-release = '1.0.0'
-
-# 语言
+release = '1.0'
+version = '1.0.0'
 language = 'zh_CN'
+master_doc = 'index'
 
-# Sphinx扩展
+# 扩展配置
 extensions = [
-    'myst_parser',
+    'myst_parser',          # Markdown 支持
     'sphinx_book_theme',
     'sphinx_copybutton',
 ]
 
-# 源文件目录
-source_suffix = {
-    '.md': 'markdown',
-    '.rst': 'restructuredtext',
-}
-
-# 主入口文件
-master_doc = 'index'
-
-# HTML主题
-html_theme = 'sphinx_book_theme'
-html_title = '游资心法：从入门到大师的进阶之路'
-
-# 主题选项
-html_theme_options = {
-    'repository_url': 'https://github.com/a576378368/quant-mentor',
-    'use_repository_button': True,
-    'use_issues_button': True,
-    'use_edit_page_button': True,
-    'home_page_in_toc': True,
-    'show_toc_level': 3,
-}
-
-# HTML 输出配置
-html_static_path = ['_static']
-html_css_files = ['custom.css']
-html_js_files = ['custom.js']
-
-# MyST配置
+# MyST Markdown 扩展配置
 myst_enable_extensions = [
-    'colon_fence',
-    'deflist',
-    'attrs_inline',
-    'attrs_block',
-    'dollarmath',
-    'amsmath',
+    'dollarmath',           # $...$ 行内公式
+    'amsmath',              # $$...$$ 块级公式
+    'deflist',              # 定义列表
+    'colon_fence',          # ::: 栅栏
 ]
 
-# 禁用某些警告
-suppress_warnings = ['myst.xref_missing']
+# 主题配置
+html_theme = 'sphinx_book_theme'
+html_title = '游资心法：从入门到大师的进阶之路'
+html_logo = '_static/logo.svg'
+html_favicon = '_static/favicon.ico'
+
+# 静态文件路径
+html_static_path = ['_static']
+
+# 目录深度
+numfig = True
+
+# 双星号加粗配置 - 确保 CommonMark 兼容
+myst_commonmark_only = False
+myst_gfm_only = False
