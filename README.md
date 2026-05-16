@@ -3,8 +3,8 @@
 <div align="center">
   <img src="https://img.shields.io/github/last-commit/a576378368/quant-mentor?style=flat-square&logo=github" />
   <img src="https://img.shields.io/github/license/a576378368/quant-mentor?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/badge/Python-3.7+-blue?style=flat-square&logo=python" />
-  <img src="https://img.shields.io/badge/Sphinx-7.4.7-green?style=flat-square&logo=sphinx" />
+  <img src="https://img.shields.io/badge/MkDocs-1.6.0-green?style=flat-square&logo=mkdocs" />
+  <img src="https://img.shields.io/badge/Material-9.5.30-blue?style=flat-square&logo=material" />
 </div>
 
 > "功夫未到时，你即使看了全部实盘，也不能了解；功夫到了，只言片语便知。"
@@ -32,8 +32,8 @@
 
 ## ✨ 特性
 
-### 🎨 精美UI设计
-- 专业金融风格主题
+### 🎨 Material 主题
+- 精美的 Material Design 风格
 - 深色/浅色模式自动切换
 - 平滑滚动和交互动画
 
@@ -42,10 +42,10 @@
 - 智能导航栏和侧边栏
 - 表格和代码块自适应
 
-### 🚀 高性能
-- Sphinx 7.4.7 构建
-- MyST-Parser Markdown 支持
-- 快速构建和部署
+### 🚀 快速构建
+- MkDocs 构建（秒级完成）
+- 无需 Python 虚拟环境
+- 直接部署到 GitHub Pages
 
 ### 📖 优质内容
 - 14个完整篇章
@@ -69,16 +69,14 @@
 git clone https://github.com/a576378368/quant-mentor.git
 cd quant-mentor
 
-# 2. 安装依赖
-pip install -r requirements.txt
+# 2. 安装依赖（可选，用于本地构建）
+pip install mkdocs mkdocs-material
 
-# 3. 构建文档
-./build-html.sh build
+# 3. 本地预览
+mkdocs serve
 
-# 4. 打开文档
-open docs/index.html
-# 或
-xdg-open docs/index.html
+# 4. 构建 HTML（部署用）
+mkdocs build
 ```
 
 ---
@@ -89,46 +87,32 @@ xdg-open docs/index.html
 
 ```bash
 # 构建 HTML 文档
-./build-html.sh build
+mkdocs build
 
-# 完整重建（清理后重新构建）
-./build-html.sh rebuild
-
-# 仅生成索引
-./build-html.sh prepare
+# 本地预览（开发用）
+mkdocs serve
 ```
 
-### 清理构建
+### 构建输出
 
-```bash
-# 清理构建文件
-./build-html.sh clean
-```
-
-### 命令说明
-
-| 命令 | 说明 |
-|------|------|
-| `build` | 构建HTML文档（默认） |
-| `rebuild` | 清理后重新构建 |
-| `prepare` | 仅生成章节索引 |
-| `clean` | 清理构建文件 |
-| `help` | 显示帮助信息 |
+- **源目录**: `docs/`（Markdown 文件）
+- **输出目录**: `site/`（生成的 HTML）
+- **配置文件**: `mkdocs.yml`
 
 ---
 
 ## 🎨 样式特点
 
-### 金融专业风格
-- **主题色**: 深蓝色 (#1e40af)，代表稳健和专业
-- **强调色**: 金色 (#f59e0b)，代表财富和机会
-- **配色方案**: 符合金融行业的专业感
+### Material Design
+- **主题色**: 蓝色，代表稳健和专业
+- **强调色**: 深橙色，代表活力和机会
+- **配色方案**: 现代简洁
 
 ### 用户体验优化
 - ✅ **深色模式**: 自动检测系统偏好
 - ✅ **平滑滚动**: 流畅的阅读体验
 - ✅ **响应式设计**: 完美适配各种设备
-- ✅ **代码高亮**: 专业的代码块样式
+- ✅ **内置搜索**: 快速查找内容
 
 ### 交互特性
 - 🎯 **锚点导航**: 点击标题快速跳转
@@ -227,22 +211,16 @@ xdg-open docs/index.html
   </a>
 </div>
 
-### 其他联系方式
-
-- 🐦 Twitter: [@quant_mentor](https://twitter.com/quant_mentor)
-- 💬 Telegram: [@quant_mentor](https://t.me/quant_mentor)
-- 📖 公众号: 游资心法
-
 ---
 
 ## 📋 更新日志
 
 ### v1.0.0 (2026-05-16)
-- ✅ 初始化项目，基于 Sphinx 构建
-- ✅ 实现专业金融风格主题
-- ✅ 支持深色/浅色模式
-- ✅ 优化移动端体验
-- ✅ 添加完整内容结构
+- ✅ 转换为 MkDocs + Material Theme
+- ✅ 简化配置，移除 Sphinx 依赖
+- ✅ 修复双星号加粗问题
+- ✅ 优化目录结构（docs/ 源 + site/ 输出）
+- ✅ 部署到 GitHub Pages (gh-pages 分支)
 
 ### v0.9.0 (2026-05-15)
 - 🚧 开发中...
@@ -253,11 +231,9 @@ xdg-open docs/index.html
 
 感谢以下项目的支持：
 
-- [Sphinx](https://www.sphinx-doc.org/) - 文档生成工具
-- [MyST-Parser](https://myst-parser.readthedocs.io/) - Markdown 支持
-- [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/) - 专业主题
-- [sphinx-copybutton](https://sphinx-copybutton.readthedocs.io/) - 代码复制
-- [sphinx-design](https://sphinx-design.readthedocs.io/) - 设计组件
+- [MkDocs](https://www.mkdocs.org/) - 文档生成工具
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Material Theme
+- [MyST](https://myst-parser.readthedocs.io/) - Markdown 增强支持
 
 ---
 
@@ -292,7 +268,7 @@ SOFTWARE.
 ---
 
 <div align="center">
-  <p style="margin-top: 2rem; color: var(--text-secondary);">
+  <p style="margin-top: 2rem; color: #64748b;">
     📚 游资心法 · 从入门到大师的进阶之路<br>
     作者: Stock Assistant | 邮箱: <a href="mailto:576378368@qq.com">576378368@qq.com</a><br>
     <a href="https://github.com/a576378368/quant-mentor">GitHub 仓库</a> | 
