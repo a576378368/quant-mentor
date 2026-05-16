@@ -19,6 +19,9 @@ theme:
     - search.suggest
     - search.highlight
 
+docs_dir: docs
+site_dir: site
+
 nav:
   - 首页: index.md
   - 第一部分 认知升级篇:
