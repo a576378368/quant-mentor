@@ -1,0 +1,2062 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="从入门到大师的进阶之路">
+      
+      
+      
+        <link rel="canonical" href="https://a576378368.github.io/quant-mentor/part6-%E5%8D%96%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%AF%87/18-%E6%AD%A2%E7%9B%88%E6%AD%A2%E6%8D%9F/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>第18章 止盈止损：保护本金 - 游资心法</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#18" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="游资心法" class="md-header__button md-logo" aria-label="游资心法" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            游资心法
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第18章 止盈止损：保护本金
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/a576378368/quant-mentor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    a576378368/quant-mentor
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="游资心法" class="md-nav__button md-logo" aria-label="游资心法" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    游资心法
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/a576378368/quant-mentor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    a576378368/quant-mentor
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part1-%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第一部分 认知升级篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第一部分 认知升级篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part2-%E6%8B%A9%E6%97%B6%E7%B3%BB%E7%BB%9F%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第二部分 择时系统篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第二部分 择时系统篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part3-%E9%80%89%E8%82%A1%E7%B3%BB%E7%BB%9F%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第三部分 选股系统篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第三部分 选股系统篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part4-%E4%B9%B0%E5%85%A5%E7%B3%BB%E7%BB%9F%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四部分 买入系统篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第四部分 买入系统篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part5-%E4%BB%93%E4%BD%8D%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五部分 仓位管理系统
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第五部分 仓位管理系统
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六部分 卖出系统篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第六部分 卖出系统篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part7-%E9%A3%8E%E6%8E%A7%E7%B3%BB%E7%BB%9F%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七部分 风控系统篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第七部分 风控系统篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part8-%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八部分 实战技巧篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第八部分 实战技巧篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part9-%E6%B8%B8%E8%B5%84%E4%BB%A3%E8%A1%A8%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第九部分 游资代表篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第九部分 游资代表篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part10-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第十部分 学习路径篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第十部分 学习路径篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part11-%E5%B8%B8%E8%A7%81%E8%AF%AF%E5%8C%BA%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第十一部分 常见误区篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第十一部分 常见误区篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part12-%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第十二部分 实战案例篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第十二部分 实战案例篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part13-%E6%88%90%E5%8A%9F%E8%A6%81%E7%B4%A0%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第十三部分 成功要素篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第十三部分 成功要素篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../part14-%E6%80%BB%E7%BB%93%E7%AF%87/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第十四部分 总结篇
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_15">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    第十四部分 总结篇
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="18">第18章 止盈止损：保护本金</h1>
+<h2 id="181">18.1 止盈止损的重要性</h2>
+<blockquote>
+<p><strong>投机的第一层思维是涨跌的简单反映，第二层思维是涨跌背后的预期差，第三层思维则是对流动性与情绪的洞察。</strong>
+—— 利弗莫尔</p>
+</blockquote>
+<p>止盈止损是交易系统中最重要的组成部分，是保护本金和锁定利润的最后防线。在游资交易系统中，止盈止损不仅是技术层面的操作，更是对市场本质的深刻理解。利弗莫尔，这位投机领域的传奇人物，用他一生的交易经验告诉我们：对市场情绪和流动性的把握，才是投机成功的关键。止盈止损正是实现这一目标的核心工具。</p>
+<p>没有止盈止损的交易，就像没有刹车的汽车，随时可能车毁人亡。在A股这个高波动的市场中，股票可能在短期内暴涨暴跌。如果投资者不能及时止盈，暴涨的利润会在暴跌中化为乌有；如果投资者不能果断止损，暴跌的亏损会像滚雪球一样越滚越大，最终可能导致本金腰斩甚至爆仓。</p>
+<h3 id="1811">18.1.1 止盈止损的三大作用</h3>
+<p><strong>作用一：保护本金——截断亏损的利刃</strong></p>
+<p>止损是保护本金的最后防线。当市场走势与预期相悖时，止损可以确保将亏损限制在可接受范围内，避免本金受到致命伤害。本金是交易的基础，保护本金是所有交易决策的前提。</p>
+<p>止损的核心原理在于"截断亏损"。假设你有100万本金，亏损50%后只剩下50万，需要盈利100%才能回到100万。亏损越大，回本越难。因此，亏损达到一定程度时必须止损，否则将陷入无法回本的深渊。</p>
+<p>止损的重要性体现在以下几个方面：第一，止损可以避免单笔交易对本金造成过大伤害；第二，止损可以保护整体资金安全，确保交易能力；第三，止损可以强制投资者承认错误，避免错上加错；第四，止损后保留的资金可以在下次机会来临时重新入市。</p>
+<p><strong>作用二：锁定利润——让盈利落袋为安</strong></p>
+<p>止盈是锁定利润的工具。当市场走势与预期一致，盈利达到目标时，止盈可以确保利润被锁定，不因市场波动而回吐。账面盈利只是数字，只有落袋为安才是真正的盈利。</p>
+<p>止盈的核心原理在于"让利润奔跑，但要及时收割"。成功的交易不仅要会买，更要会卖。买得好是成功的一半，卖得好才是完整的成功。很多投资者买对了股票却赚不到钱，就是因为缺乏止盈意识和技巧。</p>
+<p>止盈的重要性体现在以下几个方面：第一，止盈可以确保盈利不会化为乌有；第二，止盈可以让投资者在市场转弱前保住利润；第三，止盈可以为后续交易保留资金实力；第四，止盈可以让投资者在连续盈利中建立信心。</p>
+<p><strong>作用三：保持纪律——避免情绪化决策</strong></p>
+<p>止盈止损是纪律执行的具体体现。预设止盈止损位并严格执行，可以避免情绪化决策，确保交易行为的一致性。情绪是交易的大敌，止盈止损是克服情绪的有效工具。</p>
+<p>当盈利时，贪婪可能让投资者想要赚更多，不愿止盈；当亏损时，幻想可能让投资者拒绝止损，渴望回本。止盈止损通过预设明确的点位，强制投资者在预设点位执行操作，不给情绪化决策留空间。</p>
+<h3 id="1812">18.1.2 止盈止损的三大原则</h3>
+<p><strong>原则一：预先设定——在买入前确定止盈止损位</strong></p>
+<p>止盈止损位必须在买入前确定，而不是在持仓过程中临时设定。预先设定的优势在于：在买入前，投资者可以冷静分析，制定合理的止盈止损计划；买入后，投资者可能会因为持仓盈亏而影响判断，无法做出客观决策。</p>
+<p>预先设定的具体要求包括：每笔交易买入前都必须设定止盈位和止损位；止盈止损位一旦设定，原则上不可修改；如需调整，必须有充分的理由并记录。</p>
+<p><strong>原则二：严格执行——到达点位立即执行</strong></p>
+<p>止盈止损位到达时，必须立即执行，不犹豫、不等待、不抱幻想。市场瞬息万变，机会稍纵即逝。当止盈止损信号出现时，往往意味着最佳操作窗口正在关闭。</p>
+<p>严格执信的具体要求包括：止损位到达，立即以市价卖出，不考虑后续走势；止盈位到达，按计划分批卖出，不因为可能还有上涨而犹豫；到达点位后5分钟内必须执行，不给自己拖延的借口。</p>
+<p><strong>原则三：动态调整——根据市场变化灵活调整</strong></p>
+<p>止盈止损位需要根据市场环境和个股走势动态调整。但这种调整必须基于客观分析，而不是主观情绪。动态调整的原则是：止盈位只能上移，不能下移；止损位只能下移，不能上抬。</p>
+<p>动态调整的具体要求包括：持仓盈利后，可以将止盈位上移，保护利润；市场环境转弱时，可以适当收紧止盈位；持仓亏损后，不能因为想要摊平成本而扩大止损位。</p>
+<h3 id="1813">18.1.3 止盈止损的设置依据</h3>
+<p><strong>依据一：个人风险承受能力</strong></p>
+<p>止盈止损位的设置首先要考虑个人风险承受能力。不同投资者的风险承受能力不同，止盈止损策略也应不同。</p>
+<p>保守型投资者：风险承受能力较低，建议止盈位设置在15%-20%，止损位设置在5%-7%。稳健型投资者：风险承受能力适中，建议止盈位设置在30%-50%，止损位设置在10%。进取型投资者：风险承受能力较高，建议止盈位设置在50%-100%，止损位设置在15%。</p>
+<p><strong>依据二：股票波动特性</strong></p>
+<p>不同股票的波动特性不同，止盈止损位的设置也应不同。波动性大的股票，止盈止损位应适当放宽；波动性小的股票，止盈止损位可以适当收紧。</p>
+<p>判断股票波动特性的方法包括：历史波动率——查看股票过去一年的日均波动幅度；行业波动性——不同行业的股票波动性不同；市值大小——小市值股票通常波动性更大；股价位置——高位股票波动性往往更大。</p>
+<p><strong>依据三：市场环境</strong></p>
+<p>市场环境对止盈止损位的设置有重要影响。强势市场中可以适当放宽止盈止损位，弱势市场中应该收紧止盈止损位。</p>
+<p>强势市场特征：指数上涨、赚钱效应强、热点持续性好、成交量放大。弱势市场特征：指数下跌、赚钱效应差、热点稀缺、成交量萎缩。</p>
+<p><strong>依据四：持仓情况</strong></p>
+<p>持仓的成本、盈亏状态、仓位比例等因素也会影响止盈止损设置。盈利持仓可以适当放宽止盈位，亏损持仓必须严格执行止损。</p>
+<p>持仓情况对止盈止损的影响：盈利较大时可以设置移动止盈，保护利润；亏损时不能扩大止损位，应该严格止损；重仓持仓止损位应适当收紧，轻仓持仓可以适当放宽。</p>
+<h2 id="182">18.2 止盈策略详解</h2>
+<p>止盈是锁定利润的艺术。合理的止盈策略可以确保利润落袋为安，避免利润回吐；不当的止盈策略可能导致错失大行情或者利润回吐。止盈的核心在于：既要锁定利润，又要保留博取更高收益的机会。</p>
+<h3 id="1821">18.2.1 止盈的三种方法</h3>
+<p><strong>方法一：目标止盈法</strong></p>
+<p>目标止盈法是最基础也最实用的止盈方法。在买入时预设一个盈利目标位，当股价达到目标位时，按计划卖出。目标止盈法的优势在于简单易行、执行明确。</p>
+<p>目标止盈法的设置要点：</p>
+<p>固定比例法：买入价的固定百分比作为目标位。例如：买入价10元，目标位13元（30%止盈）。</p>
+<p>前高比较法：以股价前期高点作为参考，设置目标位。例如：股价前期高点25元，买入价15元，目标位22元。</p>
+<p>均线目标法：以重要均线作为目标位参考。例如：股价位于20日均线上方时持有，跌破20日均线时止盈。</p>
+<p>目标止盈法的优点是简单明确，适合新手使用；缺点是可能错失大行情，容易被小幅震荡洗出。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在10元买入某股票，设定30%止盈位（13元）。股价上涨到11元时出现小幅调整，如果此时因为震荡就卖出，可能错失后续行情。但如果设定的是移动止盈（从最高点回落10%卖出），则可以在享受上涨的同时保护利润。这就是目标止盈法与移动止盈法的结合应用。</p>
+<p><strong>方法二：分批止盈法</strong></p>
+<p>分批止盈法是更加精细的止盈策略。在持仓过程中，分阶段设置多个目标位，逐步卖出。这种方法既可以锁定部分利润，又可以保留博取更高收益的机会。</p>
+<p>分批止盈法的设置要点：</p>
+<p>三批卖出法：将持仓分为三批，设置三个目标位。例如：</p>
+<ul>
+<li>第一目标位：盈利20%，卖出30%仓位</li>
+<li>第二目标位：盈利40%，再卖出30%仓位</li>
+<li>第三目标位：出现卖出信号，卖出剩余40%仓位</li>
+</ul>
+<p>逐步提高法：随着股价上涨，逐步提高卖出价。例如：</p>
+<ul>
+<li>股价低于15元：不卖，持有</li>
+<li>股价15-18元：卖出20%仓位</li>
+<li>股价18-20元：再卖出30%仓位</li>
+<li>股价高于20元：持有到出现卖出信号</li>
+</ul>
+<p>分批止盈法的优点是可以平衡锁定利润和博取行情的关系；缺点是需要预设多个目标位，执行相对复杂。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在12元买入某股票10000股，共计12万元。采用分批止盈策略：</p>
+<ul>
+<li>第一批止盈：股价达到15元（盈利25%），卖出3000股，锁定利润9000元</li>
+<li>第二批止盈：股价达到18元（盈利50%），卖出3000股，锁定利润18000元</li>
+<li>第三批止盈：出现卖出信号时（股价16元），卖出剩余4000股</li>
+</ul>
+<p>最终结果：卖出均价约16.3元，总盈利约42000元，收益率35%。如果采用一次性止盈（15元全部卖出），只能获得25%的收益。通过分批止盈，在锁定部分利润的同时，成功捕捉到了后续行情。</p>
+<p><strong>方法三：移动止盈法</strong></p>
+<p>移动止盈法是一种动态止盈策略，随着股价上涨，逐步提高止盈位，保护不断增长的利润。移动止盈法的核心理念是：让利润奔跑，但不能让利润回吐太多。</p>
+<p>移动止盈法的设置要点：</p>
+<p>均线移动法：以重要均线作为移动止盈的参考。例如：</p>
+<ul>
+<li>持有条件：股价位于5日均线上方</li>
+<li>止盈条件：股价跌破5日均线</li>
+</ul>
+<p>固定回撤法：设定一个固定回撤比例，当股价从最高点回落达到这个比例时止盈。例如：</p>
+<ul>
+<li>股价从最高点回落10%时止盈</li>
+<li>股价从最高点回落15%时必须止盈</li>
+</ul>
+<p>高低点法：以股价的阶段高低点作为移动止盈的参考。例如：</p>
+<ul>
+<li>设定一个"最低持有点"，股价跌破这个点位时止盈</li>
+<li>随着股价上涨，不断更新"最低持有点"</li>
+</ul>
+<p>移动止盈法的优点是可以让利润充分增长，同时保护大部分利润；缺点是容易被小幅震荡洗出，可能错失大行情。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在10元买入某股票，采用移动止盈策略，设定回撤10%为止盈条件：</p>
+<ul>
+<li>股价上涨到12元，最高价12元，持有，止盈位设在10.8元（12元×90%）</li>
+<li>股价继续上涨到14元，最高价14元，止盈位提高到12.6元（14元×90%）</li>
+<li>股价涨到15元后回落，跌至13.5元，触及止盈位，卖出</li>
+</ul>
+<p>最终结果：卖出价13.5元，相比买入价10元，盈利35%。虽然股价最高达到15元，但因为采用移动止盈策略，成功保住了大部分利润。</p>
+<h3 id="1822">18.2.2 止盈的三类时机</h3>
+<p><strong>时机一：目标达成时</strong></p>
+<p>当盈利达到预设目标位时，这是最明确的止盈时机。目标达成意味着当初买入的逻辑可能已经实现，或者市场已经给予了合理的估值。</p>
+<p>目标达成时的止盈要点：</p>
+<ul>
+<li>达到目标位立即执行，不犹豫</li>
+<li>可以采用分批卖出，先卖出一部分</li>
+<li>如果目标位分批卖出，不要因为没达到最终目标而犹豫</li>
+</ul>
+<p><strong>时机二：高位分歧时</strong></p>
+<p>当股票在高位出现分歧信号时，如龙头断板、量价背离、高位震荡等，说明上涨动力可能减弱，此时应该考虑止盈。高位分歧是重要的卖出信号。</p>
+<p>高位分歧时的止盈要点：</p>
+<ul>
+<li>高位分歧信号出现时，先减仓观望</li>
+<li>确认分歧后，逐步清仓</li>
+<li>高位分歧信号包括：爆量长阴、炸板、高位倒锤头等</li>
+</ul>
+<p><strong>时机三：趋势破位时</strong></p>
+<p>当股票上涨趋势被破坏时，如跌破上升趋势线、跌破均线系统、形成顶部形态等，说明股价可能进入调整，此时应该止盈。趋势破位是明确的卖出信号。</p>
+<p>趋势破位时的止盈要点：</p>
+<ul>
+<li>跌破上升趋势线时，先减仓一半</li>
+<li>确认破位后，清仓</li>
+<li>止损线应该随着趋势线移动，不能下移</li>
+</ul>
+<h3 id="1823">18.2.3 止盈比例参考表</h3>
+<table>
+<thead>
+<tr>
+<th>投资风格</th>
+<th>止盈比例</th>
+<th>适用场景</th>
+<th>风险等级</th>
+<th>操作要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守型</td>
+<td>15%-20%</td>
+<td>波动较小股票、弱势市场</td>
+<td>低风险</td>
+<td>达标即卖，不贪心</td>
+</tr>
+<tr>
+<td>稳健型</td>
+<td>30%-50%</td>
+<td>普通股票、中性市场</td>
+<td>中风险</td>
+<td>分批止盈，保留部分</td>
+</tr>
+<tr>
+<td>进取型</td>
+<td>50%-100%</td>
+<td>强势股票、强势市场</td>
+<td>高风险</td>
+<td>移动止盈，让利润跑</td>
+</tr>
+<tr>
+<td>激进型</td>
+<td>100%以上</td>
+<td>妖股、极强趋势市场</td>
+<td>极高风险</td>
+<td>严格移动止盈，不轻易卖</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1824">18.2.4 止盈策略实战技巧</h3>
+<p><strong>技巧一：利用均线系统止盈</strong></p>
+<p>均线系统是实用的止盈工具。常用的止盈均线包括：5日均线（短线）、10日均线（波段）、20日均线（中线）。</p>
+<p>操作要点：</p>
+<ul>
+<li>股价位于均线上方时持有，跌破均线时止盈</li>
+<li>采用均线+回撤幅度双重确认</li>
+<li>均线周期越长，支撑力度越强</li>
+</ul>
+<p><strong>技巧二：利用筹码分布止盈</strong></p>
+<p>筹码分布可以反映市场持仓成本。当股价进入密集成交区时，可能遇到较大抛压，此时应该考虑止盈。</p>
+<p>操作要点：</p>
+<ul>
+<li>观察筹码分布图，找到密集成交区</li>
+<li>股价进入密集成交区时，减仓</li>
+<li>突破密集成交区后，如果量能不济，减仓</li>
+</ul>
+<p><strong>技巧三：利用板块轮动止盈</strong></p>
+<p>市场热点轮动时，持有的强势股可能开始滞涨。此时应该关注板块轮动情况，考虑止盈。</p>
+<p>操作要点：</p>
+<ul>
+<li>关注市场热点是否开始扩散</li>
+<li>持有的强势股开始滞涨时，减仓</li>
+<li>旧热点退潮、新热点兴起时，清仓</li>
+</ul>
+<p><strong>技巧四：利用龙虎榜止盈</strong></p>
+<p>龙虎榜可以反映主力资金的动向。当龙虎榜显示知名游资卖出时，应该警惕。</p>
+<p>操作要点：</p>
+<ul>
+<li>关注龙虎榜席位和买卖金额</li>
+<li>知名游资大额卖出时，减仓</li>
+<li>龙虎榜大额净卖出时，警惕</li>
+</ul>
+<h2 id="183">18.3 止损策略详解</h2>
+<p>止损是保护本金的最后防线。合理的止损策略可以确保将亏损限制在可接受范围内，避免本金受到致命伤害。止损的核心在于：承认错误，截断亏损，保留实力，等待下一次机会。</p>
+<h3 id="1831">18.3.1 止损的三种方法</h3>
+<p><strong>方法一：固定比例止损法</strong></p>
+<p>固定比例止损法是最简单也最实用的止损方法。在买入时设定一个固定的亏损比例，当股价跌破这个比例时，按计划止损。</p>
+<p>固定比例止损法的设置要点：</p>
+<p>买入价止损法：买入价×（1-止损比例）。例如：买入价10元，止损比例10%，止损位9元。</p>
+<p>持仓成本止损法：持仓平均成本×（1-止损比例）。适用于分批买入的情况。</p>
+<p>固定比例止损法的优点是简单明确，执行容易；缺点是不考虑市场环境和个股特性，可能止损过于频繁。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在10元买入某股票10000股，采用固定比例止损法，设定止损比例10%：</p>
+<ul>
+<li>买入价10元，止损位9元</li>
+<li>股价下跌到9.5元时，没有触及止损，继续持有</li>
+<li>股价下跌到8.9元时，触及止损，立即以市价卖出</li>
+<li>最终亏损约11000元（10元×10000股-8.9元×10000股），亏损比例11%</li>
+</ul>
+<p><strong>方法二：技术位止损法</strong></p>
+<p>技术位止损法是根据股票的技术形态设置止损位。这种方法更加贴合个股特性，止损位更加合理。</p>
+<p>技术位止损法的设置要点：</p>
+<p>均线止损法：以重要均线作为止损位参考。例如：跌破20日均线止损。</p>
+<p>支撑位止损法：以前期低点或成交密集区作为止损位参考。例如：跌破前期低点止损。</p>
+<p>趋势线止损法：以上升趋势线作为止损位参考。例如：跌破上升趋势线止损。</p>
+<p>形态止损法：以技术形态的颈线作为止损位参考。例如：双顶形态跌破颈线止损。</p>
+<p>技术位止损法的优点是更加精准，符合个股特性；缺点是需要一定的技术分析能力，且可能因为假突破而被频繁止损。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在10元买入某股票，根据技术分析，设定以下止损位：</p>
+<ul>
+<li>20日均线止损位：8.5元</li>
+<li>前期低点支撑位：8元</li>
+<li>上升趋势线止损位：9元</li>
+</ul>
+<p>股价下跌后，先跌破上升趋势线（9元），触发止损，卖出。实际亏损约10000元，亏损比例10%。如果使用固定比例止损（9元），结果类似。但在趋势线被跌破时止损，可以避免后续的更大下跌。</p>
+<p><strong>方法三：时间止损法</strong></p>
+<p>时间止损法是根据持仓时间来设置止损。这种方法的核心思路是：如果股票在预定时间内没有上涨，说明可能存在问题，应该止损。</p>
+<p>时间止损法的设置要点：</p>
+<p>短线时间止损：持仓3-5个交易日未达到预期目标，止损。</p>
+<p>中线时间止损：持仓10-15个交易日未达到预期目标，止损。</p>
+<p>变盘时间止损：股票在关键位置横盘超过预期时间，止损。</p>
+<p>时间止损法的优点是可以避免长期持有弱势股，节省时间成本；缺点是可能因为市场短期波动而被频繁止损。</p>
+<p><strong>案例解析：</strong></p>
+<p>某投资者在10元买入某短线强势股，设定时间止损：持有5个交易日后不涨则卖出：</p>
+<ul>
+<li>买入后第1-3天，股价小幅波动，未有明显上涨</li>
+<li>买入后第4天，股价下跌到9.5元</li>
+<li>买入后第5天，股价仍未上涨，按计划止损卖出</li>
+</ul>
+<p>最终亏损约5000元，亏损比例5%。虽然亏损不大，但因为时间止损法的限制，避免了后续的更大损失，同时节省了时间成本。</p>
+<h3 id="1832">18.3.2 止损的三类时机</h3>
+<p><strong>时机一：亏损达到止损线时</strong></p>
+<p>这是最直接的止损时机。当亏损达到预设止损线时，必须立即执行止损。止损线是交易前的决策，不应该因为持仓盈亏而改变。</p>
+<p>亏损达到止损线时的要点：</p>
+<ul>
+<li>触及止损线立即执行，不犹豫</li>
+<li>不抱侥幸心理，不等待反弹</li>
+<li>止损后总结经验，避免下次犯错</li>
+</ul>
+<p><strong>时机二：技术破位时</strong></p>
+<p>当股票技术形态被破坏时，如跌破支撑、形成破位形态等，说明股价可能进入下跌趋势，此时应该止损。技术破位是重要的卖出信号。</p>
+<p>技术破位时的止损要点：</p>
+<ul>
+<li>跌破重要支撑位时，先减仓一半</li>
+<li>确认破位后，清仓</li>
+<li>不因为已经亏损而不愿卖出</li>
+</ul>
+<p><strong>时机三：基本面恶化时</strong></p>
+<p>当持仓股票出现基本面恶化信号时，如业绩大幅下滑、重大利空消息、公司管理层变动等，说明股票可能进入下跌趋势，此时应该止损。</p>
+<p>基本面恶化时的止损要点：</p>
+<ul>
+<li>重大利空消息出现时，开盘即卖</li>
+<li>业绩大幅下滑时，考虑止损</li>
+<li>负面新闻持续发酵时，减仓</li>
+</ul>
+<h3 id="1833">18.3.3 止损比例参考表</h3>
+<table>
+<thead>
+<tr>
+<th>投资风格</th>
+<th>止损比例</th>
+<th>适用场景</th>
+<th>风险等级</th>
+<th>操作要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>保守型</td>
+<td>5%-7%</td>
+<td>波动较小股票、重仓持仓</td>
+<td>低风险</td>
+<td>触发即卖</td>
+</tr>
+<tr>
+<td>稳健型</td>
+<td>10%</td>
+<td>普通股票、中等仓位</td>
+<td>中风险</td>
+<td>触发即卖</td>
+</tr>
+<tr>
+<td>进取型</td>
+<td>15%</td>
+<td>强势股票、短线操作</td>
+<td>高风险</td>
+<td>可等待确认</td>
+</tr>
+<tr>
+<td>激进型</td>
+<td>20%</td>
+<td>妖股、高波动股票</td>
+<td>极高风险</td>
+<td>严格止损</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1834">18.3.4 止损策略实战技巧</h3>
+<p><strong>技巧一：采用"两步止损法"</strong></p>
+<p>两步止损法是先减仓后清仓的止损策略。当触及止损线时，先卖出一半仓位，锁定部分亏损；如果股价继续下跌，再卖出剩余仓位。</p>
+<p>操作要点：</p>
+<ul>
+<li>第一步：触及止损线，卖出50%仓位</li>
+<li>第二步：股价继续下跌3%-5%，卖出剩余50%仓位</li>
+<li>两步止损法可以避免卖在最低点</li>
+</ul>
+<p><strong>技巧二：采用"时间+幅度"双重止损</strong></p>
+<p>单一的时间止损或幅度止损可能不够精准，采用"时间+幅度"双重止损可以提高止损准确性。</p>
+<p>操作要点：</p>
+<ul>
+<li>时间条件：持有超过X个交易日</li>
+<li>幅度条件：盈利少于Y%或亏损超过Z%</li>
+<li>两个条件同时满足时才止损</li>
+<li>双重条件可以减少频繁止损</li>
+</ul>
+<p><strong>技巧三：采用"保本止损法"</strong></p>
+<p>保本止损法是指当股价上涨到一定程度后，将止损位上移到成本价附近，实现"不亏本"的目标。</p>
+<p>操作要点：</p>
+<ul>
+<li>设定"保本线"，例如盈利10%后</li>
+<li>当盈利达到保本线时，将止损位上移到成本价</li>
+<li>保本止损法可以确保不亏本</li>
+</ul>
+<p><strong>技巧四：采用"硬止损+软止损"组合</strong></p>
+<p>硬止损是必须执行的止损点，软止损是可以灵活调整的止损点。</p>
+<p>操作要点：</p>
+<ul>
+<li>硬止损：亏损达到15%时，必须止损</li>
+<li>软止损：亏损达到10%时，考虑减仓</li>
+<li>软止损给予一定的灵活度，但硬止损是底线</li>
+</ul>
+<h2 id="184">18.4 止盈止损的动态调整</h2>
+<p>止盈止损位不是一成不变的，需要根据市场环境和个股走势进行动态调整。合理的动态调整可以更好地保护利润，控制亏损。</p>
+<h3 id="1841">18.4.1 环境变化时的调整</h3>
+<p><strong>强势市场中的调整</strong></p>
+<p>在强势市场中，可以适当放宽止盈止损位，让利润充分增长。强势市场的特征是：指数稳步上涨、赚钱效应强、热点持续性好、成交量放大。</p>
+<p>强势市场中的调整要点：</p>
+<ul>
+<li>止盈位可以适当上移，追求更高收益</li>
+<li>止损位可以适当放宽，避免被正常震荡洗出</li>
+<li>盈亏比可以提高，上涨空间更大</li>
+</ul>
+<p><strong>弱势市场中的调整</strong></p>
+<p>在弱势市场中，应该收紧止盈止损位，及时锁定利润，控制亏损。弱势市场的特征是：指数持续下跌、赚钱效应差、热点稀缺、成交量萎缩。</p>
+<p>弱势市场中的调整要点：</p>
+<ul>
+<li>止盈位应该降低，及时锁定利润</li>
+<li>止损位应该收紧，避免亏损扩大</li>
+<li>操作频率应该降低，多看少动</li>
+</ul>
+<h3 id="1842">18.4.2 持仓变化时的调整</h3>
+<p><strong>盈利后的调整</strong></p>
+<p>持仓盈利后，可以适当调整止盈止损位，保护已经获得的利润。盈利越多，止盈位越应该收紧。</p>
+<p>盈利后的调整要点：</p>
+<ul>
+<li>盈利后可以将止盈位从固定比例改为移动止盈</li>
+<li>盈利越大，止盈位越靠近成本价</li>
+<li>"移动止盈法"是盈利后常用的止盈策略</li>
+</ul>
+<p><strong>亏损后的调整</strong></p>
+<p>持仓亏损后，不应该扩大止损位来摊平成本，而应该维持原有止损位或者收紧止损位。亏损后应该冷静分析亏损原因，而不是通过加大赌注来回本。</p>
+<p>亏损后的调整要点：</p>
+<ul>
+<li>亏损后不能扩大止损位</li>
+<li>应该分析亏损原因，判断是否应该止损</li>
+<li>如果持仓逻辑发生变化，应该考虑止损</li>
+</ul>
+<h3 id="1843">18.4.3 动态调整的原则</h3>
+<p><strong>止盈位只能上移，不能下移</strong></p>
+<p>当股价上涨后，止盈位只能往上调整，不能往下调整。止盈位的下移意味着降低盈利预期，这往往是贪婪和侥幸的表现。</p>
+<p>例如：买入价10元，初始止盈位13元（30%）。当股价上涨到15元时，止盈位只能从13元往上调整（如调整到14元、15元），不能往下调整（如调整到12元）。</p>
+<p><strong>止损位只能下移，不能上抬</strong></p>
+<p>当股价下跌后，止损位只能往下调整，不能往上调整。止损位的上抬意味着扩大亏损，这是绝对禁止的行为。</p>
+<p>例如：买入价10元，初始止损位9元（10%）。当股价下跌到9.5元时，止损位只能从9元往下调整（如调整到8.8元、8.5元），不能往上调整（如调整到9.2元、9.5元）。</p>
+<p><strong>调整需要有明确的理由</strong></p>
+<p>止盈止损位的调整需要有明确的理由，不能因为主观情绪而调整。明确的理由包括：市场环境发生变化、公司基本面发生变化、技术形态发生变化等。</p>
+<p>调整前的 checklist：</p>
+<ul>
+<li>调整理由是什么？</li>
+<li>这个理由是客观的还是主观的？</li>
+<li>调整幅度是否合理？</li>
+<li>调整后是否符合交易计划？</li>
+</ul>
+<h2 id="185">18.5 止盈止损的实战案例</h2>
+<h3 id="1851">18.5.1 案例一：止盈止损完美配合</h3>
+<p><strong>时间</strong>：2026年3月<br />
+<strong>股票</strong>：科技龙头A（00XX）<br />
+<strong>操作</strong>：止盈止损配合操作  </p>
+<p><strong>案例背景</strong>：</p>
+<p>科技龙头A是一只人工智能概念股，上市后受到市场热捧。某投资者在2月初以15元的价格买入50000股，共计投入75万元。预设止盈位30%（19.5元），预设止损位10%（13.5元）。</p>
+<p><strong>操作过程</strong>：</p>
+<p>买入后，股价一路上行。2月中旬，股价突破18元，涨幅20%。此时投资者采用移动止盈策略，将止盈位从19.5元调整到18元（从最高点回落10%）。</p>
+<p>2月底，股价达到20元，最高价20元。此时将止盈位调整到18元（20元×90%）。</p>
+<p>3月5日，股价从20元高位回落，跌至18.5元，触及移动止盈位。投资者立即卖出全部持仓。</p>
+<p>3月6日，股价低开低走，午后跌停。如果持有不动，利润将回吐超过50%。</p>
+<p><strong>结果</strong>：</p>
+<p>卖出均价18.2元，卖出股数50000股，回笼资金91万元，盈利16万元，收益率21.3%。虽然股价最高达到20元，但通过移动止盈策略，成功保住了大部分利润。</p>
+<p><strong>经验总结</strong>：</p>
+<p>止盈止损的动态调整是保护利润的关键。该案例中，投资者通过及时上移止盈位，既锁定了部分利润，又保留了博取更高收益的机会。当股价触及移动止盈位时，果断清仓，成功保住了利润。止盈止损不是一成不变的，需要根据市场走势灵活调整。</p>
+<h3 id="1852">18.5.2 案例二：止损保护本金</h3>
+<p><strong>时间</strong>：2026年4月<br />
+<strong>股票</strong>：新能源B（00XX）<br />
+<strong>操作</strong>：止损执行  </p>
+<p><strong>案例背景</strong>：</p>
+<p>新能源B是一只新能源汽车概念股，上市后股价波动较大。某投资者在4月初以22元的价格买入30000股，共计投入66万元。预设止损位10%（19.8元）。</p>
+<p><strong>操作过程</strong>：</p>
+<p>买入后，股价在22-23元区间震荡两周。4月第三周，股价突然下跌，跌破22元支撑。4月第四周，股价继续下跌，逼近20元关口。</p>
+<p>4月22日，股价低开低走，午后跌破20元关口，触及预设止损线19.8元。投资者立即按照止损纪律，在20元位置市价卖出全部持仓，卖出价格20元。</p>
+<p><strong>结果</strong>：</p>
+<p>卖出价格20元，卖出股数30000股，回笼资金60万元，亏损6万元，亏损比例9.1%（接近预设的10%止损线）。</p>
+<p><strong>后续走势</strong>：</p>
+<p>该股随后继续下跌，5月初跌破15元关口，5月中旬跌破12元。如果不止损，亏损将超过45%。投资者通过严格执行止损纪律，成功将亏损控制在10%以内，保留了资金实力。</p>
+<p><strong>经验总结</strong>：</p>
+<p>止损是保护本金的最后防线。该案例中，投资者通过严格执行止损纪律，在股价跌破预设止损线时果断出局，成功将亏损控制在可接受范围内。虽然这次交易以亏损告终，但止损保护了本金，为后续交易保留了机会。止损本身不是失败，及时止损是为了避免更大的亏损。</p>
+<h3 id="1853">18.5.3 案例三：分批止盈策略</h3>
+<p><strong>时间</strong>：2026年5月<br />
+<strong>股票</strong>：芯片龙头C（00XX）<br />
+<strong>操作</strong>：分批止盈  </p>
+<p><strong>案例背景</strong>：</p>
+<p>芯片龙头C是一只半导体概念股，受益于国产替代政策，股价从年初的12元一路上涨到5月初的22元。某投资者在4月初以14元的价格买入80000股，共计投入112万元。</p>
+<p><strong>操作计划</strong>：</p>
+<p>根据分批止盈策略，投资者预设了三个目标位：</p>
+<ul>
+<li>第一目标位18元（盈利29%），卖出30%仓位</li>
+<li>第二目标位21元（盈利50%），再卖出30%仓位</li>
+<li>第三目标位出现卖出信号，卖出剩余40%仓位</li>
+</ul>
+<p><strong>操作过程</strong>：</p>
+<p>第一批次止盈：4月20日，股价达到18元，投资者按照计划卖出24000股，卖出价格18元，回笼资金43.2万元，盈利9.6万元（收益率29%）。</p>
+<p>第二批次止盈：5月5日，股价达到21元，投资者按照计划再卖出24000股，卖出价格21元，回笼资金50.4万元，盈利16.8万元（累计收益率50%）。</p>
+<p>第三批次止盈：5月15日，该股高位震荡后出现炸板信号，投资者立即卖出剩余32000股，卖出价格19.5元，回笼资金62.4万元。</p>
+<p><strong>结果</strong>：</p>
+<p>总回笼资金156万元，总盈利44万元，总收益率39.3%。分批止盈策略成功锁定了利润，同时保留了博取更高收益的机会。</p>
+<p><strong>经验总结</strong>：</p>
+<p>分批止盈策略是锁定利润的有效方法。该案例中，投资者通过预设多个目标位，分批卖出，既锁定了部分利润，又保留了博取更高收益的机会。分批止盈的关键在于预设目标位和卖出比例，严格执行计划。</p>
+<h3 id="1854">18.5.4 案例四：止损过严与止损过宽的对比</h3>
+<p><strong>时间</strong>：2026年3-4月<br />
+<strong>股票</strong>：两只不同特性股票<br />
+<strong>操作</strong>：不同止损策略对比  </p>
+<p><strong>案例背景与操作</strong>：</p>
+<p>股票A（大盘蓝筹股）：某投资者在3月初以20元买入10000股，设定止损比例5%（19元）。股票波动较小，很快跌到19.2元触发止损，亏损8000元。随后股价反弹，如果不止损可以盈利。但因为止损过严，错失了反弹机会。</p>
+<p>股票B（中小盘成长股）：某投资者在3月初以10元买入50000股，设定止损比例15%（8.5元）。股票波动较大，买入后下跌到9元，因为未触及止损线继续持有。股价继续下跌到8元，触发止损，亏损10万元。如果当初设定10%止损，可以少亏5万元。</p>
+<p><strong>两种策略的对比分析</strong>：</p>
+<p>止损过严的问题：</p>
+<ul>
+<li>容易因为正常波动而被频繁止损</li>
+<li>可能错失后续反弹行情</li>
+<li>频繁止损会导致本金不断减少</li>
+</ul>
+<p>止损过宽的问题：</p>
+<ul>
+<li>单次亏损过大，影响整体资金</li>
+<li>可能因为侥幸心理而拒绝止损</li>
+<li>不符合个人风险承受能力</li>
+</ul>
+<p><strong>正确的止损策略</strong>：</p>
+<p>止损比例应该根据股票特性和个人风险承受能力来设定：</p>
+<ul>
+<li>大盘蓝筹股：波动较小，止损比例5%-7%</li>
+<li>中小盘成长股：波动较大，止损比例10%-15%</li>
+<li>题材炒作股：波动极大，止损比例可达20%</li>
+</ul>
+<p><strong>经验总结</strong>：</p>
+<p>止损比例的设置需要因股票而异、因人而异。过严的止损可能导致频繁亏损，过宽的止损可能导致单次亏损过大。正确的做法是根据股票特性和个人风险承受能力，选择合适的止损比例。</p>
+<h2 id="186">18.6 止盈止损的检查清单</h2>
+<h3 id="1861">18.6.1 买入前检查清单</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>是/否</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>止盈位是否设定</td>
+<td>必须设定</td>
+<td>明确目标</td>
+</tr>
+<tr>
+<td>止损位是否设定</td>
+<td>必须设定</td>
+<td>控制风险</td>
+</tr>
+<tr>
+<td>止盈止损比例是否合理</td>
+<td>必须确认</td>
+<td>符合风格</td>
+</tr>
+<tr>
+<td>是否有调整预案</td>
+<td>建议设定</td>
+<td>应对变化</td>
+</tr>
+<tr>
+<td>是否符合仓位管理</td>
+<td>必须确认</td>
+<td>不超仓位</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1862">18.6.2 持仓中检查清单</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>频率</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>止盈位是否需要上移</td>
+<td>每日</td>
+<td>盈利后必须检查</td>
+</tr>
+<tr>
+<td>止损位是否需要下移</td>
+<td>每日</td>
+<td>亏损后不可上抬</td>
+</tr>
+<tr>
+<td>市场环境是否变化</td>
+<td>每日</td>
+<td>影响止盈止损</td>
+</tr>
+<tr>
+<td>个股走势是否异常</td>
+<td>实时</td>
+<td>及时发现信号</td>
+</tr>
+<tr>
+<td>止盈止损信号是否出现</td>
+<td>实时</td>
+<td>触发即执行</td>
+</tr>
+</tbody>
+</table>
+<h3 id="1863">18.6.3 卖出后检查清单</h3>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>是/否</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>是否达到预设目标</td>
+<td>对照</td>
+<td>分析原因</td>
+</tr>
+<tr>
+<td>是否触发止损</td>
+<td>对照</td>
+<td>分析原因</td>
+</tr>
+<tr>
+<td>执行是否及时</td>
+<td>记录</td>
+<td>检查纪律</td>
+</tr>
+<tr>
+<td>盈亏是否符合预期</td>
+<td>计算</td>
+<td>分析差异</td>
+</tr>
+<tr>
+<td>是否需要总结</td>
+<td>必须</td>
+<td>持续改进</td>
+</tr>
+</tbody>
+</table>
+<h2 id="187">18.7 止盈止损的常见误区</h2>
+<h3 id="1871">18.7.1 误区一：不止损</h3>
+<p><strong>错误表现</strong>：</p>
+<p>不设止损线，或者设了止损线但不执行。常见的想法包括："跌了这么多，应该会反弹吧"、"只要不卖就不算亏损"、"我等它涨回来再卖"。</p>
+<p><strong>错误后果</strong>：</p>
+<p>不止损是交易中最危险的行为之一。在A股这样的高波动市场，股票可能连续下跌数年，如果不及时止损，本金可能损失殆尽。不止损的投资者最终往往陷入"套牢-等待解套-更深套-彻底失望"的恶性循环。</p>
+<p><strong>正确做法</strong>：</p>
+<ul>
+<li>每笔交易都必须预设止损位</li>
+<li>止损位一旦设定，必须严格执行</li>
+<li>亏损达到止损线时，立即卖出，不犹豫</li>
+</ul>
+<h3 id="1872">18.7.2 误区二：不止盈</h3>
+<p><strong>错误表现</strong>：</p>
+<p>不设止盈位，或者设了止盈位但不执行。常见的想法包括："还能再涨"、"我要卖在最高点"、"已经等了这么久，再等等"。</p>
+<p><strong>错误后果</strong>：</p>
+<p>不止盈的后果往往是利润回吐甚至由盈转亏。A股市场波动剧烈，股票可能在短期内暴涨暴跌。没有止盈策略的投资者，即使买到了牛股，也可能因为贪婪而持有不动，最终利润全部回吐。</p>
+<p><strong>正确做法</strong>：</p>
+<ul>
+<li>每笔交易都应该预设止盈位</li>
+<li>达到目标位时，按计划分批止盈</li>
+<li>采用移动止盈策略，保护不断增长的利润</li>
+</ul>
+<h3 id="1873">18.7.3 误区三：随意修改止损止盈</h3>
+<p><strong>错误表现</strong>：</p>
+<p>随意修改预设的止损止盈位。常见的做法包括：因为贪婪而不断提高止盈位，因为恐惧而不断扩大止损位，因为侥幸而取消止损位。</p>
+<p><strong>错误后果</strong>：</p>
+<p>随意修改止盈止损位是对纪律的严重破坏。当止盈位被不断提高时，投资者永远无法实现盈利目标，因为股价永远不够高。当止损位被不断扩大时，单次亏损可能变得无法承受。最终，这种做法会导致交易系统失效。</p>
+<p><strong>正确做法</strong>：</p>
+<ul>
+<li>止盈止损位一旦设定，原则上不可修改</li>
+<li>如需调整，必须有充分理由并记录</li>
+<li>止盈位只能上移，止损位只能下移</li>
+</ul>
+<h3 id="1874">18.7.4 误区四：止损后反手买入</h3>
+<p><strong>错误表现</strong>：</p>
+<p>止损卖出后，看到股价继续下跌，认为是"捡便宜"的机会，于是反手买入。常见的想法包括："现在买更便宜"、"跌了这么多应该反弹了"、"上次买早了，这次买肯定对"。</p>
+<p><strong>错误后果</strong>：</p>
+<p>止损后反手买入是"接飞刀"的行为，风险极大。股价下跌往往有其原因，在没有确认见底之前买入，可能导致更大亏损。止损的目的在于承认错误、截断亏损，而不是为了在更低位置买入。</p>
+<p><strong>正确做法</strong>：</p>
+<ul>
+<li>止损后保持空仓观望</li>
+<li>等待股价企稳并出现明确的买入信号</li>
+<li>重新制定交易计划，而不是立即反手买入</li>
+</ul>
+<h3 id="1875">18.7.5 误区五：用想象代替纪律</h3>
+<p><strong>错误表现</strong>：</p>
+<p>用主观想象代替客观的止盈止损规则。常见的想法包括："我觉得差不多该卖了"、"我认为跌到这儿差不多了"、"我感觉还会涨"。</p>
+<p><strong>错误后果</strong>：</p>
+<p>用想象代替纪律是情绪化决策的表现，往往导致亏损。交易决策应该基于客观的信号和规则，而不是主观的感受。偶尔的主观判断可能正确，但长期来看，这种做法无法形成一致性的交易系统。</p>
+<p><strong>正确做法</strong>：</p>
+<ul>
+<li>预设明确的止盈止损规则</li>
+<li>严格按照规则执行</li>
+<li>如需调整，必须基于客观分析</li>
+</ul>
+<h2 id="188">18.8 止盈止损的进阶技巧</h2>
+<h3 id="1881-atr">18.8.1 技巧一：ATR指标止损法</h3>
+<p>ATR（Average True Range）指标可以反映股价的平均波动幅度，是一种更加精准的止损方法。</p>
+<p>操作要点：</p>
+<ul>
+<li>计算股票N日ATR值（通常为14日）</li>
+<li>止损位 = 买入价 - N×ATR</li>
+<li>ATR止损法可以根据股价波动性动态调整止损位</li>
+</ul>
+<p>例如：某股票14日ATR为0.5元，买入价10元，设定2倍ATR止损：</p>
+<ul>
+<li>止损位 = 10元 - 2×0.5元 = 9元</li>
+<li>当股价跌破9元时止损</li>
+</ul>
+<h3 id="1882">18.8.2 技巧二：布林带止损法</h3>
+<p>布林带指标可以反映股价的波动区间，是一种实用的止损工具。</p>
+<p>操作要点：</p>
+<ul>
+<li>股价位于布林带中轨上方时持有</li>
+<li>股价跌破布林带中轨时减仓</li>
+<li>股价跌破布林带下轨时清仓</li>
+</ul>
+<p>例如：某股票布林带中轨15元，下轨13元，买入价14元：</p>
+<ul>
+<li>持有条件：股价位于中轨15元上方</li>
+<li>减仓条件：股价跌破中轨15元</li>
+<li>止损条件：股价跌破下轨13元</li>
+</ul>
+<h3 id="1883">18.8.3 技巧三：筹码密集区止损法</h3>
+<p>筹码分布可以反映市场的持仓成本，筹码密集区往往形成支撑或压力。</p>
+<p>操作要点：</p>
+<ul>
+<li>观察筹码分布图，找到密集成交区</li>
+<li>股价在密集区上方时，以密集区下沿为止损位</li>
+<li>股价在密集区下方时，以密集区上沿为止损位</li>
+</ul>
+<p>例如：某股票筹码密集区在12-13元，买入价14元：</p>
+<ul>
+<li>止损位设置在12元（密集区下沿附近）</li>
+<li>当股价跌破12元时，说明跌破支撑，止损</li>
+</ul>
+<h3 id="1884">18.8.4 技巧四：市场关联止损法</h3>
+<p>很多股票与市场指数或所在板块高度相关，可以通过观察市场或板块走势来设置止损。</p>
+<p>操作要点：</p>
+<ul>
+<li>关注市场指数走势</li>
+<li>关注个股所在板块走势</li>
+<li>当市场或板块出现破位信号时，即使个股还未破位，也应该考虑减仓</li>
+</ul>
+<p>例如：持有科技股，当科技板块指数跌破重要支撑时：</p>
+<ul>
+<li>即使持仓股票还未跌破支撑，也应该减仓</li>
+<li>因为板块整体下跌，个股很难独善其身</li>
+</ul>
+<h2 id="189">18.9 止盈止损心法</h2>
+<h3 id="1891">18.9.1 止盈心法</h3>
+<p><strong>心法一：知足常乐</strong></p>
+<p>贪婪是止盈的大敌。设定止盈目标时，要切合实际，不要想着一夜暴富。达到目标后及时止盈，才能在长期交易中保持稳定盈利。</p>
+<p>口诀："贪心不足必成空，知足常乐是正宗。目标达成及时卖，落袋为安是英雄。"</p>
+<p><strong>心法二：让利润奔跑</strong></p>
+<p>止盈不是不让利润增长，而是要在适当的时候锁定利润。对于强势股票，可以采用移动止盈，让利润充分增长。</p>
+<p>口诀："利润奔跑莫要急，移动止盈是妙计。趋势不破继续持有，趋势一破速逃离。"</p>
+<p><strong>心法三：分批收割</strong></p>
+<p>分批止盈是平衡风险和收益的好方法。既锁定部分利润，又保留博取更高收益的机会。</p>
+<p>口诀："分批卖出是良策，三分之一先落袋。三分之一防回吐，剩余仓位等机会。"</p>
+<h3 id="1892">18.9.2 止损心法</h3>
+<p><strong>心法一：承认错误</strong></p>
+<p>止损的核心是承认错误。市场永远正确，错误的只有我们自己。当止损信号出现时，不要找借口，立即执行。</p>
+<p>口诀："止损出场不为输，承认错误是觉悟。本金保护是根本，留得火种好翻本。"</p>
+<p><strong>心法二：截断亏损</strong></p>
+<p>亏损就像伤口，如果不及时处理，会越烂越大。止损就是及时处理伤口，截断亏损，避免更大的伤害。</p>
+<p>口诀："亏损似虎莫轻视，截断亏损要及时。小洞不补成大患，及时止损是药石。"</p>
+<p><strong>心法三：不为面子持仓</strong></p>
+<p>很多投资者因为"面子"而不愿止损，觉得承认亏损很丢脸。但亏损是交易的一部分，止损是为了保护本金，不是失败者的行为。</p>
+<p>口诀："持仓不是为面子，止损不为丢脸面。本金安全最重要，虚荣心要放一边。"</p>
+<h2 id="1810">18.10 小结</h2>
+<p>止盈止损是游资交易系统的重要组成部分，是保护本金和锁定利润的核心工具。掌握止盈止损的具体方法和技巧，是每一个交易者必须具备的能力。</p>
+<h3 id="_1">本章核心要点</h3>
+<p><strong>止盈止损的三大作用</strong>：</p>
+<ol>
+<li><strong>保护本金</strong>：截断亏损，避免本金受到致命伤害</li>
+<li><strong>锁定利润</strong>：让利润落袋为安，避免回吐</li>
+<li><strong>保持纪律</strong>：避免情绪化决策，确保交易一致性</li>
+</ol>
+<p><strong>止盈止损的三大原则</strong>：</p>
+<ol>
+<li><strong>预先设定</strong>：买入前确定止盈止损位</li>
+<li><strong>严格执行</strong>：到达点位立即执行</li>
+<li><strong>动态调整</strong>：根据市场变化灵活调整</li>
+</ol>
+<p><strong>止盈的三种方法</strong>：</p>
+<ol>
+<li><strong>目标止盈法</strong>：预设固定目标位，达标即卖</li>
+<li><strong>分批止盈法</strong>：预设多个目标位，分批卖出</li>
+<li><strong>移动止盈法</strong>：随着股价上涨，逐步提高止盈位</li>
+</ol>
+<p><strong>止损的三种方法</strong>：</p>
+<ol>
+<li><strong>固定比例止损法</strong>：预设固定亏损比例，触发即卖</li>
+<li><strong>技术位止损法</strong>：根据技术形态设置止损位</li>
+<li><strong>时间止损法</strong>：预设持仓时间，超时即卖</li>
+</ol>
+<p><strong>动态调整原则</strong>：</p>
+<ol>
+<li>止盈位只能上移，不能下移</li>
+<li>止损位只能下移，不能上抬</li>
+<li>调整需要有明确的理由</li>
+</ol>
+<p><strong>记住</strong>：止盈止损是保护本金的最后防线。没有止盈止损，就没有长期生存的可能。止盈止损是交易系统的重要组成部分，是长期盈利的保障。</p>
+<p><strong>下一章预告</strong>：第19章《卖出系统综合运用》——学习如何综合运用各种卖出策略，建立完整的卖出系统。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.indexes", "navigation.sections", "toc.integrate", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
