@@ -1,0 +1,41 @@
+# macOS 系统文件
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+
+# 临时/隐藏文件
+*.bak
+*.swp
+*.tmp
+
+# MkDocs 构建产物（由 GitHub Actions 部署到 gh-pages 分支）
+/site/
+
+# Sphinx 时代的过时产物（已废弃，MkDocs 使用 chapters/ 作为 docs_dir）
+/docs/
+
+# 本地构建的电子书和脚本（参考用途，不进版本控制）
+/output/
+
+# 参考资料目录（个人收集，不进版本控制）
+/ref/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 系统文件
+.DS_Store
